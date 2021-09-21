@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -7,7 +9,7 @@ input::-webkit-inner-spin-button {
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -69,8 +71,8 @@ div.card {
 }
 
 .selectric {
-  border: 0px solid #DDD;
-  background: #F8F8F8;
+  border: 0px solid #ddd;
+  background: #f8f8f8;
   position: relative;
   border-radius: 100px;
 }
@@ -120,7 +122,7 @@ div.card {
 }
 
 .selectric-focus .selectric {
-  border-color: #AAA;
+  border-color: #aaa;
 }
 
 .selectric-hover .selectric {
@@ -153,9 +155,9 @@ div.card {
   opacity: 0.5;
   cursor: default;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .selectric-hide-select {
@@ -218,8 +220,8 @@ div.card {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #F8F8F8;
-  border: 1px solid #C4C4C4;
+  background: #f8f8f8;
+  border: 1px solid #c4c4c4;
   z-index: -1;
   box-shadow: 0 0 10px -6px;
 }
@@ -234,7 +236,8 @@ div.card {
   bottom: 100%;
 }
 
-.selectric-items ul, .selectric-items li {
+.selectric-items ul,
+.selectric-items li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -246,24 +249,24 @@ div.card {
 .selectric-items li {
   display: block;
   padding: 8px;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #EEE;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #eee;
   color: #666;
   cursor: pointer;
 }
 
 .selectric-items li.selected {
-  background: #EFEFEF;
+  background: #efefef;
   color: #444;
 }
 
 .selectric-items li.highlighted {
-  background: #D0D0D0;
+  background: #d0d0d0;
   color: #444;
 }
 
 .selectric-items li:hover {
-  background: #F0F0F0;
+  background: #f0f0f0;
   color: #444;
 }
 
@@ -274,9 +277,9 @@ div.card {
   background: none !important;
   color: #666 !important;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .selectric-items .selectric-group .selectric-group-label {
@@ -284,9 +287,9 @@ div.card {
   padding-left: 10px;
   cursor: default;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background: none;
   color: #444;
 }
@@ -300,6 +303,95 @@ div.card {
   padding-left: 25px;
 }
 
+/* CHAT */
+.chat-box .chat-content {
+  background-color: #f9f9f9 !important;
+  height: 300px;
+  overflow: hidden;
+  padding-top: 25px !important;
+}
+.chat-box .chat-content .chat-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.chat-box .chat-content .chat-item.chat-right img {
+  float: right;
+}
+.chat-box .chat-content .chat-item.chat-right .chat-details {
+  margin-left: 0;
+  margin-right: 70px;
+  text-align: right;
+}
+.chat-box .chat-content .chat-item.chat-right .chat-details .chat-text {
+  text-align: left;
+  background-color: #38c5a0;
+  color: #fff;
+}
+.chat-box .chat-content .chat-item > img {
+  float: left;
+  width: 50px;
+  border-radius: 50%;
+}
+.chat-box .chat-content .chat-item .chat-details {
+  margin-left: 70px;
+}
+.chat-box .chat-content .chat-item .chat-details .chat-text {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  width: auto;
+  display: inline-block;
+  font-size: 12px;
+}
+.chat-box .chat-content .chat-item .chat-details .chat-text img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.chat-box .chat-content .chat-item.chat-typing .chat-details .chat-text {
+  background-image: url("../img/typing.svg");
+  height: 40px;
+  width: 60px;
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+.chat-box .chat-content .chat-item .chat-details .chat-time {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.chat-box .chat-form {
+  padding: 0;
+  position: relative;
+}
+.chat-box .chat-form .form-control {
+  border: none;
+  padding: 15px;
+  height: 50px;
+  padding-right: 70px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+}
+.chat-box .chat-form .btn {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+}
+.chat-box .chat-form .btn i {
+  margin-left: 0;
+}
 
 /* MODAL LOGIN */
 div.modal-login div.form-group label,
@@ -403,11 +495,15 @@ div.card-daftar div.form-group input {
 }
 
 /* LUPA PASSWORD */
-div.lupa-password, div.kode-password, div.password-baru {
+div.lupa-password,
+div.kode-password,
+div.password-baru {
   width: 100%;
 }
 
-div.lupa-password a.btn, div.kode-password a.btn, div.password-baru a.btn {
+div.lupa-password a.btn,
+div.kode-password a.btn,
+div.password-baru a.btn {
   width: 100%;
 }
 
@@ -427,7 +523,9 @@ button.navbar-toggler {
   border: none;
 }
 
-a.nav-link, a.profil, a.keranjang {
+a.nav-link,
+a.profil,
+a.keranjang {
   font-size: 14px;
 }
 
@@ -454,16 +552,18 @@ nav.navbar div.head p {
   font-size: 14px;
 }
 
-nav.navbar div.dropdown-keranjang div.dropdown-menu, nav.navbar div.dropdown-notif div.dropdown-menu {
+nav.navbar div.dropdown-keranjang div.dropdown-menu,
+nav.navbar div.dropdown-notif div.dropdown-menu {
   width: 350px;
 }
 
-nav.navbar div.dropdown-keranjang p, nav.navbar div.dropdown-chat p {
+nav.navbar div.dropdown-keranjang p,
+nav.navbar div.dropdown-chat p {
   font-size: 14px;
 }
 
 nav.navbar div.dropdown-keranjang b {
-  color:#6c757d;
+  color: #6c757d;
 }
 
 nav.navbar div.dropdown-keranjang h6 {
@@ -475,7 +575,10 @@ div.navbar-nav a.nav-link {
   color: white !important;
 }
 
-nav.navbar a.profil, nav.navbar a.keranjang, nav.navbar a.notif, nav.navbar a.pesan {
+nav.navbar a.profil,
+nav.navbar a.keranjang,
+nav.navbar a.notif,
+nav.navbar a.pesan {
   text-decoration: none;
 }
 
@@ -547,7 +650,7 @@ div.card-produk p.harga {
 }
 
 div.card-produk p.rating-produk {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: -10px;
   color: #343a40;
 }
@@ -562,7 +665,9 @@ div.card-produk div.aksi-produk a {
 }
 
 /* DETAIL PRODUK */
-div#deskripsi p, div#kelengkapan, div#catatan p {
+div#deskripsi p,
+div#kelengkapan,
+div#catatan p {
   font-size: 14px;
   margin-top: 10px;
 }
@@ -571,7 +676,8 @@ div.info-toko a {
   text-decoration: none;
 }
 
-div.progress, div.ml-4 {
+div.progress,
+div.ml-4 {
   width: 100%;
 }
 
@@ -582,6 +688,32 @@ div.progress div.progress-bar {
 div.balasan-penjual {
   padding: 25px;
   border-radius: 10px;
+}
+
+/* PANTAU PESANAN */
+div.section-pantau-pesanan ul li a.nav-link {
+  color: #444;
+}
+
+div.section-pantau-pesanan ul li a.nav-link.active {
+  background-color: #38c5a0;
+}
+
+div.detail-pesanan p,
+div.detail-pesanan div.alert {
+  font-size: 14px;
+}
+
+div.upload-gambar.form-group {
+  font-size: 10px;
+}
+
+div.card.dalam-proses p {
+  font-size: 14px;
+}
+
+div.form-group.ulasan {
+  font-size: 14px;
 }
 
 /* CARD WISATA */
@@ -605,39 +737,42 @@ footer li a {
 
 /* DASHBOARD */
 nav.nav-dashboard div.d-flex {
-    width: 90%;
+  width: 90%;
 }
 
 a.profil-dropdown img {
-    width: 40px;
+  width: 40px;
 }
 
 nav.navbar div.d-flex a {
-    padding: 6px;
+  padding: 6px;
 }
 
 nav#sidebarMenu li a.active {
-    font-weight: 600;
-    color: #38c5a0;
+  font-weight: 600;
+  color: #38c5a0;
 }
 
 nav#sidebarMenu li a {
-    color: #343a40
+  color: #343a40;
 }
 
 @media (min-width: 992px) {
-
   body.login-page {
     background-position-y: -200px;
   }
 
-  div.lupa-password, div.kode-password, div.password-baru {
+  div.lupa-password,
+  div.kode-password,
+  div.password-baru {
     width: 50%;
-}
+  }
 
-div.lupa-password a.btn, div.kode-password a.btn, div.password-baru a.btn {
+  div.lupa-password a.btn,
+  div.kode-password a.btn,
+  div.password-baru a.btn {
     width: 50%;
-}
+  }
 
   div.form-login {
     position: relative;
@@ -660,6 +795,5 @@ div.lupa-password a.btn, div.kode-password a.btn, div.password-baru a.btn {
 
   nav.navbar div.d-flex a {
     padding: 10px;
-}
-
+  }
 }
