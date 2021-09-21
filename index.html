@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/white.png" width="200px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <a class="nav-link" href="#"><i class="bx bx-fw bx-cart"></i>Keranjang</a>
+          <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-login-home btn-light btn-sm">Masuk Dulu</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-scroller bg-white shadow-sm">
+    <div class="container">
+      <nav class="nav nav-underline d-flex justify-content-center">
+        <a class="nav-link active" href="#">Utama</a>
+        <a class="nav-link" href="#">Belanja</a>
+        <a class="nav-link" href="#">Wisata</a>
+        <a class="nav-link" href="#">Tentang</a>
+      </nav>
+    </div>
+  </div>
+  <!-- akhir header -->
+
+  <!-- konten utama -->
+  <main role="main" class="container">
+
+    <!-- carousel iklan -->
+    <div id="carouselExampleFade" class="mt-4 carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/iklan 1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/iklan 2.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- akhir caorusel iklan -->
+
+    <!-- list produk -->
+    <section class="mt-5 section-list-produk">
+      <div class="d-flex justify-content-between mb-3">
+        <h6>Produk Baru Diunggah</h6>
+        <a href="#" class="link-main-color">Lihat Semua</a>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a class="href-produk" href="pelanggan-detail-produk.html">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-waroeng-ndesso.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Waroeng Ndesso-Menu Nasi Tumpeng Ingkung</h6>
+                <p class="harga">Rp. 200.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/omah-dhuwur.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Omah Ndhuwur-Ingkung Ayam Kremes Negri</h6>
+                <p class="harga">Rp. 80.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-sorsawo.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Sorsawo-Paket Ingkung Ayam Areh Sedang</h6>
+                <p class="harga">Rp. 150.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-pak-budi.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Pak budi-Ingkung Paket Keluarga</h6>
+                <p class="harga">Rp. 150.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-cikalan.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Cikalan-Menu Ayam Ingkung Jawa</h6>
+                <p class="harga">Rp. 120.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-kuali-1.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Kuali Pusat-Ingkung Rica-rica Sedang</h6>
+                <p class="harga">Rp. 150.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- end list produk -->
+
+    <!-- siap diantar -->
+    <section class="mt-5 section-list-produk">
+      <div class="d-flex justify-content-between mb-3">
+        <h6>Siap Diantar Hari Ini</h6>
+        <a href="" class="link-main-color">Lihat Semua</a>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-mbah-kentol.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Mbah Kentol-Ingkung Cancut Taliwondo</h6>
+                <p class="harga">Rp. 200.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-joglo-pring.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Joglo Pring-Paket Kembul Ingkung Tambiran</h6>
+                <p class="harga">Rp. 190.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-joglo-bu-sareh.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Joglo Bu Sareh-Ingkung Nasi Kuning</h6>
+                <p class="harga">Rp. 300.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-tepi-sawah.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Tepi Sawah-Paket Ingkung Hantaran</h6>
+                <p class="harga">Rp. 110.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-kuali-4.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Kuali 4-Paket Ingkung Original Sedang</h6>
+                <p class="harga">Rp. 150.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+          <a href="pelanggan-detail-produk.html" class="href-produk">
+            <div class="card card-produk">
+              <img src="img/produk/ingkung-kuali-3.png" height="140px" class="card-img-top">
+              <div class="card-body">
+                <h6 class="nama-produk text-justify">Ingkung Kuali 3-Ingkung Original Areh</h6>
+                <p class="harga">Rp. 150.000</p>
+                <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+              </div>
+              <div class="aksi-produk text-center container">
+                <a href="javascript:vuid(0);" class="btn btn-sm bg-main-color btn-block">Masuk Keranjang</a>
+                <a href="javascript:vuid(0);" class="btn btn-sm btn-outline-warning mt-2 btn-block">Checkout</a>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- end list produk -->
+
+    <!-- penawaran spesial -->
+    <section class="mt-3 section-penawaran-spesial">
+      <div class="d-flex justify-content-between mb-3">
+        <h6>Penawaran Spesial Untukmu</h6>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-4 col-12 mb-3">
+          <a href="#">
+            <img class="img img-fluid" src="img/iklan/penawaran-spesial-1.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 mb-3">
+          <a href="#">
+            <img class="img img-fluid" src="img/iklan/penawaran-spesial-2.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 mb-3">
+          <a href="#">
+            <img class="img img-fluid" src="img/iklan/penawaran-spesial-3.png" alt="">
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- akhir penawaran spesial -->
+
+    <!-- wisata -->
+    <section class="mt-3 section-wisata">
+      <div class="d-flex justify-content-between mb-3">
+        <h6>Wisata Guwosari Yang Hits</h6>
+        <!-- <a href="" class="text-success">Lihat Semua</a> -->
+      </div>
+      
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="https://cdn-2.tstatic.net/jogja/foto/bank/images/mengintip-keindahan-alam-desa-wisata-kampung-santan-di-bantul.jpg"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Wisata Kampung Santan</h5>
+            <p class="card-text">
+              Wisata Desa Guwosari dengan kebudayaan unik dan dikenal sebagai desa wisata, berwisata sambil belajar
+            </p>
+            <p class="card-text"><small class="text-muted">Diunggah 15 Juli 2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn-2.tstatic.net/jogja/foto/bank/images/mengintip-keindahan-alam-desa-wisata-kampung-santan-di-bantul.jpg"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Wisata Goa Selarong</h5>
+            <p class="card-text">
+              Wisata Desa Guwosari yang menyimpan sejarah tersendiri dalam masa kemerdekaan Indonesia yang disebut dengan Goa Selarong
+            </p>
+            <p class="card-text"><small class="text-muted">Diunggah 15 Juli 2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn-2.tstatic.net/jogja/foto/bank/images/mengintip-keindahan-alam-desa-wisata-kampung-santan-di-bantul.jpg"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Wisata Taman Jatilarangan</h5>
+            <p class="card-text">
+              Destinasi wisata terbaru di Desa Guwosari dengan suasana taman desa yang menyenangkan
+            </p>
+            <p class="card-text"><small class="text-muted">Diunggah 15 Juli 2021</small></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- akhir wisata -->
+
+  </main>
+  <!-- akhir konten utama -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- modal login -->
+  <div class="modal fade modal-login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">Login</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">Email/telepon</label>
+            <input type="text" class="form-control" aria-describedby="helpId" placeholder="Misal: email@guwosari.com">
+          </div>
+          <div class="form-group">
+            <label class="d-flex justify-content-between mb-0">
+              <p>Password</p>
+              <a href="pelanggan-lupa-password.html">Lupa password</a>
+            </label>
+            <input type="password" class="form-control">
+          </div>
+          <p class="link-daftar">Belum punya akun? daftar <a href="pelanggan-daftar.html">disini</a></p>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <a href="pelanggan-home.html" class="btn btn-lg btn-block">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal login -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

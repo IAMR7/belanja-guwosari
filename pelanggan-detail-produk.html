@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/white.png" width="200px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari sesuatu ..." aria-label="Search">
+          </form>
+          
+          <!-- dropdown chat -->
+          <div class="dropdown dropdown-chat mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-chat"></i>Chat
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+              <div class="dropdown-header">Pesan Masuk (1)</div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item d-flex">
+                  <div class="dropdown-item-avatar mr-2">
+                    <img alt="image" width="35px" src="img/warung-ndeso.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Waroeng nDesso <i class='bx bx-fw bx-badge-check text-info'></i></b>
+                    <p>Yang bumbu rica rica nya sedang kosong</p>
+                    <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center mt-3">
+                <a href="pelanggan-chat.html" class="link-main-color">Lihat Semua <i class="bx bx-fw bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown chat -->
+
+          <!-- dropdown notifikasi -->
+          <div class="dropdown dropdown-notif mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-bell"></i>Notifikasi
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+              <div class="dropdown-header">Notifikasi (1)
+                <div class="float-right">
+                  <a class="link-main-color" href="#">Tandai Semua Terbaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content">
+                <a href="javascript:void(0);" class="dropdown-item d-flex">
+                  <div class="dropdown-item-icon text-success">
+                    <i class="bx bx-fw bx-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Berhasil memesan produk pertama anda !
+                    <div class="time text-muted">
+                      <small>2 menit yang lalu</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown notifikasi -->
+
+          <!-- dropdown keranjang -->
+          <div class="dropdown dropdown-keranjang mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuKeranjang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-cart"></i>Keranjang
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right" aria-labelledby="dropdownMenuKeranjang">
+              <div class="dropdown-header">Total Pesanan : 1
+                <div class="float-right">
+                  <p class="text-warning">Rp. 200.000</p>
+                </div>
+              </div>
+              <div class="dropdown-list-content">
+
+                <a href="pelanggan-keranjang.html" class="dropdown-item d-flex">
+                  <div class="dropdown-item-avatar mr-3">
+                    <img alt="image" class="rounded" width="50px" src="img/produk/ingkung-waroeng-ndesso.png">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Ingkung Waroeng nDesso- <br> Nasi Tumpeng Ingkung</b>
+                    <p class="text-warning">Rp. 200.000</p>
+                    <div class="time">Jumlah Pesanan : 1</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown keranjang -->
+
+          <!-- dropdown profil -->
+          <div class="dropdown mt-1">
+            <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/avatar/foto.png" width="30px" alt=""> Reza Febriansyah
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item mb-2" href="pelanggan-akun-profil.html">
+                <i class="bx bx-fw bx-user"></i> Akun Profil
+              </a>
+              <a class="dropdown-item mb-2" href="pelanggan-halaman-umkm.html">
+                <i class="bx bx-fw bxs-store"></i> Halaman UMKM
+              </a>
+              <a class="dropdown-item mb-2" href="pelanggan-pantau-pesanan.html">
+                <i class="bx bx-fw bxs-truck"></i> Pantau Pesanan
+              </a>
+              <a class="dropdown-item text-danger" type="button" id="swal-logout">
+                <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+              </a>
+            </div>
+          </div>
+          <!-- end dropdown profil -->
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-scroller bg-white shadow-sm">
+    <div class="container">
+      <nav class="nav nav-underline d-flex justify-content-center">
+        <a class="nav-link link-main-color" href="#">Utama</a>
+        <a class="nav-link" href="#">Belanja</a>
+        <a class="nav-link" href="#">Wisata</a>
+        <a class="nav-link" href="#">Tentang</a>
+      </nav>
+    </div>
+  </div>
+  <!-- akhir header -->
+
+  <!-- konten utama -->
+  <main role="main" class="container">
+
+    <div class="row mt-4">
+
+      <!-- FOTO DETAIL PRODUK -->
+      <div class="col-lg-4 col-md-6 col-12 foto-detail-produk">
+        <div class="card">
+          <div class="card-body">
+            <a href="img/produk/ingkung-waroeng-ndesso.png" class="chocolat-image" title="Just an example">
+              <div data-crop-image="285">
+                <img alt="image" src="img/produk/ingkung-waroeng-ndesso.png" class="img-fluid">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- AKHIR FOTO DETAIL PRODUK -->
+
+      <!-- DESKRIPSI DETAIL PRODUK -->
+      <div class="col-lg-4 col-md-6 col-12 ket-detail-produk">
+        <h5 class="text-dark">Waroeng nDesso-Nasi Tumpeng Ingkung</h5>
+        <p class="text-muted">Terjual 5 | <i class="text-warning fa fa-star" aria-hidden="true"></i> 4.9 | 2 Ulasan</p>
+        <h3>Rp. 200.000</h3>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="deskripsi-tab" data-toggle="tab" href="#deskripsi" role="tab" aria-controls="deskripsi" aria-selected="true">Deskripsi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-main-color" id="kelengkapan-tab" data-toggle="tab" href="#kelengkapan" role="tab" aria-controls="kelengkapan" aria-selected="false">Kelengkapan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-main-color" id="catatan-tab" data-toggle="tab" href="#catatan" role="tab" aria-controls="catatan" aria-selected="false">Catatan</a>
+          </li>
+        </ul>
+        <div class="tab-content text-justify" id="myTabContent">
+          <div class="tab-pane fade show active" id="deskripsi" role="tabpanel" aria-labelledby="deskripsi-tab">
+            <p>
+              Ayam Ingkung merupakan kuliner khas Jawa yang berbahan dasar ayam yang dimasak secara utuh dengan berbagai jenis bumbu rempah. Ingkung berasal dari kata“manengkung” yang berarti berdoa kepada Tuhan dengan kesungguhan hati. Hidangan ini menjadi kultur dan wajib di setiap acara besar adat Jawa. Cita rasa ayam goreng yang tidak pedas dengan bumbu yang meresap sangat cocok khususnya yang memiliki anak-anak dirumah.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="kelengkapan" role="tabpanel" aria-labelledby="kelengkapan-tab">
+            <p>
+              Kondisi: Baru <br>
+              Berat: 1.500 Gram <br>
+              Kategori: Makanan <br><br>
+              Ayam goreng <br>
+              1 ekor +/- 1.5 kg <br>
+              Ayam merah, texture seperti ayam kampung Enak dan murah Sdh termasuk lalapan dan sambal
+            </p>
+          </div>
+          <div class="tab-pane fade" id="catatan" role="tabpanel" aria-labelledby="catatan-tab">
+            <p>
+              CARA PENYAJIAN: <br>
+              - Sebaiknya dikonsumsi langsung saat paket makanan tiba. <br>
+              - Disimpan pada chiller, tahan 1- 2 hari. <br>
+              - Bisa hangatkan kembali menggunakan microwave selama 1-2 menit atau air fry selama 5-10 menit.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex info-toko mb-3">
+          <a href="profil-toko.html">
+            <img class="rounded-circle" src="img/warung-ndeso.png" alt="" width="50px" height="50px">
+            <div class="ml-4">
+              <p class="text-dark">
+                <b>Waroeng nDesso <i class='bx bx-fw bx-badge-check text-success'></i></b>
+              </p>
+              <a href="javascript:void(0);" class="btn bg-main-color">Follow</a>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- AKHIR DESKRIPSI DETAIL PRODUK -->
+
+      <!-- ADD TO CART -->
+      <div class="col-lg-4 col-md-6 col-12 add-to-cart">
+        <div class="card">
+          <div class="card-body">
+            <b>Jumlah Stok Dipesan</b>
+            <div class="row mt-3 mb-3">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <a type="button" class="quantity-left-minus btn btn-light" data-type="minus" data-field="">
+                      <span class="bx bx-fw bx-minus"></span>
+                    </a>
+                  </span>
+                  <input type="text" id="quantity" name="quantity" class="ml-1 mr-1 text-center form-control" value="1" min="1" max="100">
+                  <span class="input-group-btn">
+                    <a type="button" class="quantity-right-plus btn btn-light" data-type="plus" data-field="">
+                      <span class="bx bx-fw bx-plus"></span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-12">
+                <p class="text-center">Stok tersedia : <b>7</b> </p>
+              </div>
+            </div>
+            <a class="link-main-color" data-toggle="collapse" href="#catatan-beli" role="button" aria-expanded="false" aria-controls="catatan-beli">
+              <i class="bx bx-fw bx-edit"></i> Catatan
+            </a>
+            <div class="mt-2 collapse" id="catatan-beli">
+              <textarea class="form-control" name="" id="" rows="3" placeholder="Beri catatan untuk penjual"></textarea>
+            </div>
+            
+            <div class="row mt-2 mb-3">
+              <div class="col-lg-6 col-md-6 col-12">
+                <p>Total Harga</p>
+              </div>
+              <div class="col-6 col-md-6 col-12">
+                <h5>Rp. 320.000</h5>
+              </div>
+            </div>
+
+            <a href="javascript:void(0);" class="btn bg-main-color mr-2">
+              <i class="fa fa-plus" aria-hidden="true"></i> Tambah Keranjang
+            </a>
+            <a href="pelanggan-checkout.html" class="btn btn-outline-warning">Checkout</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- AKHIR ADD TO CART -->
+      
+    </div>
+
+    <!-- ULASAN -->
+    <div class="ulasan mt-5">
+      <b>Ulasan (10)</b>
+      <div class="rating d-flex">
+        <div>
+          <h1 class="display-3">4.8</h1>
+          <div class="bintang-ulasan text-warning">
+            <i class="bx bx-fw bxs-star"></i>
+            <i class="bx bx-fw bxs-star"></i>
+            <i class="bx bx-fw bxs-star"></i>
+            <i class="bx bx-fw bxs-star"></i>
+            <i class="bx bx-fw bx-star"></i>
+          </div>
+        </div>
+        <div class="ml-4">
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">2</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+          </div>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">8</div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- KOMENTAR -->
+      <div class="komentar mt-4">
+        <div class="profil-pengulas d-flex justify-content-between">
+          <div class="foto-pengulas">
+            <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" class="image rounded-circle" width="50px" height="50px">
+          </div>
+          <div class="nama-pengulas">
+            <b>Maryadi Hadi</b>
+            <p class="text-muted">4 Hari yang lalu</p>
+          </div>
+          <div class="text-warning">
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+          </div>
+        </div>
+        <p>Santan nya gurih banget, enakk</p>
+        <div class="balasan-penjual bg-light">
+          <img src="https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit" alt="" class="image mr-3 rounded-circle" width="30px" height="30px">
+          <a href="profil-toko.html" class="link-main-color">
+            <b>Ingkung Kuali <i class="fa fa-check-circle text-info" aria-hidden="true"></i></b>
+          </a>
+          <p class="mt-2">Terimakasih atas ulasan anda yang sangat membantu kami untuk pelayanan lebih baik kedepannya</p>
+        </div>
+      </div>
+      <hr>
+      <div class="komentar mt-4">
+        <div class="profil-pengulas d-flex justify-content-between">
+          <div class="foto-pengulas">
+            <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1605492341/kbloeu3ppold01afogig.png" alt="" class="image rounded-circle" width="50px" height="50px">
+          </div>
+          <div class="nama-pengulas">
+            <b>Fiki Naki</b>
+            <p class="text-muted">4 Hari yang lalu</p>
+          </div>
+          <div class="text-warning">
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+            <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+          </div>
+        </div>
+        <p>Baru nyobain ada ayam ingkung se enak ini di Jogjaa</p>
+        <div class="balasan-penjual bg-light">
+          <img src="https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit" alt="" class="image mr-3 rounded-circle" width="30px" height="30px">
+          <a href="profil-toko.html" class="link-main-color">
+            <b>Ingkung Kuali <i class="fa fa-check-circle text-info" aria-hidden="true"></i></b>
+          </a>
+          <p class="mt-2">Terimakasih atas ulasannya Kak Fiki, jangan lupa main lagi yaa</p>
+        </div>
+      </div>
+      <hr>
+      <!-- AKHIR KOMENTAR -->
+
+    </div>
+    <!-- AKHIR ULASAN -->
+
+  </main>
+  <!-- akhir konten utama -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a.btn.bg-main-color {
+  background-color: #38c5a0;
+  color: white;
+}
+
+a.link-main-color {
+  color: #38c5a0 !important;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 12px;
+}
+
+.swal-button--confirm {
+  border-radius: 2px;
+  background-color: #38c5a0;
+  -size: 12px;
+}
+.swal-button--confirm:hover {
+  background-color: #338872;
+}
+
+div.dropdown-menu {
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+
+div.dropdown-menu a {
+  font-size: 14px;
+  color: #343a40;
+}
+
+div.card {
+  border: 1px solid whitesmoke;
+}
+
+/*======================================
+  Selectric
+======================================*/
+.selectric-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.selectric-responsive {
+  width: 100%;
+}
+
+.selectric {
+  border: 0px solid #DDD;
+  background: #F8F8F8;
+  position: relative;
+  border-radius: 100px;
+}
+
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 50px 0 30px;
+  font-size: 12px;
+  line-height: 50px;
+  color: #444;
+  height: 50px;
+}
+
+.selectric .button {
+  background: none;
+  border-radius: 0px;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  color: #444;
+  text-align: center;
+  font: 0/0 a;
+  *font: 50px/50px Lucida Sans Unicode, Arial Unicode MS, Arial;
+}
+
+.selectric .button:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #444;
+  border-bottom: none;
+}
+
+.selectric-focus .selectric {
+  border-color: #AAA;
+}
+
+.selectric-hover .selectric {
+  border-color: #c4c4c4;
+}
+
+.selectric-hover .selectric .button {
+  color: #c4c4c4;
+}
+
+.selectric-hover .selectric .button:after {
+  border-top-color: #c4c4c4;
+}
+
+.selectric-open {
+  z-index: 9999;
+}
+
+.selectric-open .selectric {
+  border-color: #c4c4c4;
+  background: #dfdfdf;
+}
+
+.selectric-open .selectric-items {
+  display: block;
+}
+
+.selectric-disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectric-hide-select {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.selectric-hide-select select {
+  position: absolute;
+  left: -100%;
+}
+
+.selectric-hide-select.selectric-is-native {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.selectric-hide-select.selectric-is-native select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  z-index: 1;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.selectric-input {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: 0/0 a !important;
+  background: none !important;
+}
+
+.selectric-temp-show {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+.selectric-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #F8F8F8;
+  border: 1px solid #C4C4C4;
+  z-index: -1;
+  box-shadow: 0 0 10px -6px;
+}
+
+.selectric-items .selectric-scroll {
+  height: 100%;
+  overflow: auto;
+}
+
+.selectric-above .selectric-items {
+  top: auto;
+  bottom: 100%;
+}
+
+.selectric-items ul, .selectric-items li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  min-height: 20px;
+}
+
+.selectric-items li {
+  display: block;
+  padding: 8px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #EEE;
+  color: #666;
+  cursor: pointer;
+}
+
+.selectric-items li.selected {
+  background: #EFEFEF;
+  color: #444;
+}
+
+.selectric-items li.highlighted {
+  background: #D0D0D0;
+  color: #444;
+}
+
+.selectric-items li:hover {
+  background: #F0F0F0;
+  color: #444;
+}
+
+.selectric-items .disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default !important;
+  background: none !important;
+  color: #666 !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectric-items .selectric-group .selectric-group-label {
+  font-weight: bold;
+  padding-left: 10px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: none;
+  color: #444;
+}
+
+.selectric-items .selectric-group.disabled li {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.selectric-items .selectric-group li {
+  padding-left: 25px;
+}
+
+
+/* MODAL LOGIN */
+div.modal-login div.form-group label,
+div.modal-login p,
+div.modal-login div.modal-footer a {
+  font-size: 12px;
+}
+
+div.modal-login div.form-group input.form-control {
+  font-size: 12px;
+  padding: 20px;
+}
+
+div.modal-login label.d-flex a,
+div.modal-login p.link-daftar a,
+div.card-daftar p.link-login a,
+div.form-login p.link-back-daftar a {
+  color: #38c5a0;
+}
+
+div.modal-login div.modal-footer a {
+  background-color: #38c5a0;
+  color: white;
+}
+
+/* LOGIN */
+body.login-page {
+  background-image: url("/img/bg-login.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+body.login-page::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  opacity: 70%;
+}
+
+div.form-login {
+  position: relative;
+  z-index: 999;
+  width: 80%;
+  margin-top: 90px;
+}
+
+div.form-login img {
+  width: 250px;
+}
+
+div.form-login div.form-group label.d-flex a {
+  color: #38c5a0;
+}
+
+div.form-login a.tombol-login {
+  width: 100%;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #38c5a0;
+  color: white;
+}
+
+/* DAFTAR */
+img.ilus-daftar {
+  width: 100%;
+}
+
+div.tombol-daftar a.btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+div.card-daftar {
+  border: 1px solid whitesmoke;
+}
+
+div.card-daftar div.form-group label,
+div.card-daftar div.form-group input,
+div.card-daftar div.tombol-daftar a.btn,
+div.card-daftar div.tombol-daftar p.link-login {
+  font-size: 14px;
+}
+
+div.form-login p.link-back-daftar {
+  font-size: 14px;
+}
+
+div.card-daftar div.tombol-daftar a.btn {
+  background-color: #38c5a0;
+  padding: 14px;
+  color: white;
+}
+
+div.card-daftar div.form-group input {
+  padding: 20px;
+  border: 0.5px solid whitesmoke;
+}
+
+/* LUPA PASSWORD */
+div.lupa-password, div.kode-password, div.password-baru {
+  width: 100%;
+}
+
+div.lupa-password a.btn, div.kode-password a.btn, div.password-baru a.btn {
+  width: 100%;
+}
+
+div.lupa-password a.btn-kirim-kode {
+  font-size: 14px;
+  background-color: #38c5a0;
+  color: white;
+  padding: 12px;
+}
+
+/* NAVBAR */
+nav.navbar {
+  background-color: #38c5a0;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+a.nav-link, a.profil, a.keranjang {
+  font-size: 14px;
+}
+
+nav.navbar a.navbar-brand {
+  font-weight: 700;
+  color: white;
+}
+
+nav.navbar a.navbar-brand:hover {
+  color: white;
+}
+
+nav.navbar form input.form-control {
+  font-size: 14px;
+  font-family: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 20px;
+}
+
+nav.navbar div.head p {
+  font-size: 14px;
+}
+
+nav.navbar div.dropdown-keranjang div.dropdown-menu, nav.navbar div.dropdown-notif div.dropdown-menu {
+  width: 350px;
+}
+
+nav.navbar div.dropdown-keranjang p, nav.navbar div.dropdown-chat p {
+  font-size: 14px;
+}
+
+nav.navbar div.dropdown-keranjang b {
+  color:#6c757d;
+}
+
+nav.navbar div.dropdown-keranjang h6 {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+div.navbar-nav a.nav-link {
+  color: white !important;
+}
+
+nav.navbar a.profil, nav.navbar a.keranjang, nav.navbar a.notif, nav.navbar a.pesan {
+  text-decoration: none;
+}
+
+button.btn-login-home {
+  font-size: 12px;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+  color: #38c5a0;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+/* CARD PRODUK */
+section.section-list-produk a.href-produk {
+  text-decoration: none;
+}
+
+div.card-produk {
+  width: 100%;
+}
+
+div.card-produk div.card-body {
+  margin-top: -10px;
+}
+
+div.card-produk h6.nama-produk {
+  font-size: 12px;
+  line-height: 18px;
+  color: #343a40;
+}
+
+div.card-produk p.harga {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2px;
+  color: #343a40;
+}
+
+div.card-produk p.rating-produk {
+  font-size: 14px;
+  margin-top: -10px;
+  color: #343a40;
+}
+
+div.card-produk div.aksi-produk {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+div.card-produk div.aksi-produk a {
+  font-size: 10px;
+}
+
+/* DETAIL PRODUK */
+div#deskripsi p, div#kelengkapan, div#catatan p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+div.info-toko a {
+  text-decoration: none;
+}
+
+div.progress, div.ml-4 {
+  width: 100%;
+}
+
+div.progress div.progress-bar {
+  background-color: #38c5a0;
+}
+
+div.balasan-penjual {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* CARD WISATA */
+section.section-wisata div.card-group div.card h5.card-title {
+  font-size: 18px;
+  color: #38c5a0;
+}
+
+section.section-wisata div.card-group div.card p.card-text {
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #38c5a0;
+}
+
+footer li a {
+  font-size: 14px;
+}
+
+/* DASHBOARD */
+nav.nav-dashboard div.d-flex {
+    width: 90%;
+}
+
+a.profil-dropdown img {
+    width: 40px;
+}
+
+nav.navbar div.d-flex a {
+    padding: 6px;
+}
+
+nav#sidebarMenu li a.active {
+    font-weight: 600;
+    color: #38c5a0;
+}
+
+nav#sidebarMenu li a {
+    color: #343a40
+}
+
+@media (min-width: 992px) {
+
+  body.login-page {
+    background-position-y: -200px;
+  }
+
+  div.lupa-password, div.kode-password, div.password-baru {
+    width: 50%;
+}
+
+div.lupa-password a.btn, div.kode-password a.btn, div.password-baru a.btn {
+    width: 50%;
+}
+
+  div.form-login {
+    position: relative;
+    z-index: 999;
+    width: 30%;
+    margin-top: 6px;
+  }
+
+  div.form-login img {
+    width: 306px;
+  }
+
+  nav.nav-dashboard div.d-flex {
+    width: 100%;
+  }
+
+  a.profil-dropdown img {
+    width: 8%;
+  }
+
+  nav.navbar div.d-flex a {
+    padding: 10px;
+}
+
+}
