@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/selectric.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/white.png" width="200px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari sesuatu ..." aria-label="Search">
+          </form>
+
+          <!-- dropdown chat -->
+          <div class="dropdown dropdown-chat mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-chat"></i>Chat
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+              <div class="dropdown-header">Pesan Masuk (1)</div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item d-flex">
+                  <div class="dropdown-item-avatar mr-2">
+                    <img alt="image" width="35px" src="assets/img/warung-ndeso.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b>
+                    <p>Yang bumbu rica rica nya sedang kosong</p>
+                    <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center mt-3">
+                <a href="pelanggan-chat.html" class="text-primary">Lihat Semua <i
+                    class="bx bx-fw bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown chat -->
+
+          <!-- dropdown notifikasi -->
+          <div class="dropdown dropdown-notif mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-bell"></i>Notifikasi
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+              <div class="dropdown-header">Notifikasi (1)
+                <div class="float-right">
+                  <a class="text-primary" href="#">Tandai Semua Terbaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content">
+                <a href="javascript:void(0);" class="dropdown-item d-flex">
+                  <div class="dropdown-item-icon text-success">
+                    <i class="bx bx-fw bx-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Berhasil memesan produk pertama anda !
+                    <div class="time text-muted">
+                      <small>2 menit yang lalu</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown notifikasi -->
+
+          <!-- dropdown keranjang -->
+          <div class="dropdown dropdown-keranjang mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuKeranjang"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-cart"></i>Keranjang
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right" aria-labelledby="dropdownMenuKeranjang">
+              <div class="dropdown-header">Total Pesanan : 1
+                <div class="float-right">
+                  <p class="text-warning">Rp. 200.000</p>
+                </div>
+              </div>
+              <div class="dropdown-list-content">
+
+                <a href="pelanggan-keranjang.html" class="dropdown-item d-flex">
+                  <div class="dropdown-item-avatar mr-3">
+                    <img alt="image" class="rounded" width="50px" src="assets/img/produk/ingkung-waroeng-ndesso.png">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Ingkung Waroeng nDesso- <br> Nasi Tumpeng Ingkung</b>
+                    <p class="text-warning">Rp. 200.000</p>
+                    <div class="time">Jumlah Pesanan : 1</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown keranjang -->
+
+          <!-- dropdown profil -->
+          <div class="dropdown mt-1">
+            <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/avatar/foto.png" width="30px" alt=""> Reza Febriansyah
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item mb-2" href="pelanggan-akun-profil.html">
+                <i class="bx bx-fw bx-user"></i> Akun Profil
+              </a>
+              <a class="dropdown-item mb-2" href="pelanggan-halaman-umkm.html">
+                <i class="bx bx-fw bxs-store"></i> Halaman UMKM
+              </a>
+              <a class="dropdown-item mb-2" href="pelanggan-pantau-pesanan.html">
+                <i class="bx bx-fw bxs-truck"></i> Pantau Pesanan
+              </a>
+              <a class="dropdown-item text-danger" type="button" id="swal-logout">
+                <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+              </a>
+            </div>
+          </div>
+          <!-- end dropdown profil -->
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-scroller bg-white shadow-sm">
+    <div class="container">
+      <nav class="nav nav-underline d-flex justify-content-center">
+        <a class="nav-link link-main-color" href="pelanggan-home.html">Utama</a>
+        <a class="nav-link" href="pelanggan-belanja.html">Belanja</a>
+        <a class="nav-link" href="pelanggan-wisata.html">Wisata</a>
+        <a class="nav-link" href="pelanggan-tentang.html">Tentang</a>
+      </nav>
+    </div>
+  </div>
+  <!-- akhir header -->
+
+  <!-- konten utama -->
+  <main role="main" class="container">
+    <section class="section mt-4">
+      <div class="section-body">
+        <div class="invoice">
+          <div class="invoice-print">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="invoice-title">
+                  <h3>Kode Pembayaran : <span class="text-primary">Order INV-502147</span></h3>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-6">
+                    <address>
+                      <strong>Telah Dibayar Oleh :</strong><br>
+                        A.N Reza Febriansyah<br>
+                        08979443076<br>
+                        reza.febri72@gmail.com
+                    </address>
+                  </div>
+                  <div class="col-md-6 text-md-right">
+                    <address>
+                      <strong>Penerima :</strong><br>
+                      Reza Febriansyah<br>
+                      08979443076<br>
+                      Jl Gang Migunani, Tamantirto, Kasihan, Bantul<br>
+                      D I Yogyakarta, Indonesia
+                    </address>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <address>
+                      <strong>Metode Pembayaran :</strong><br>
+                      Transfer Bank BRI<br>
+                      327101041713533
+                    </address>
+                  </div>
+                  <div class="col-md-6 text-md-right">
+                    <address>
+                      <strong>Tanggal Pemesanan :</strong><br>
+                      22 Juni 2021<br><br>
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <div class="section-title">Produk Yang Dipesan</div>
+                <p class="section-lead">Pastikan kalau pesanan dibawah ini sudah benar</p>
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover table-md">
+                    <tr>
+                      <th data-width="40">No</th>
+                      <th>Produk</th>
+                      <th class="text-center">Harga</th>
+                      <th class="text-center">Jumlah</th>
+                      <th class="text-right">Total</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Waroeng nDesso-Nasi Tumpeng Ingkung</td>
+                      <td class="text-center">Rp.320.000</td>
+                      <td class="text-center">1</td>
+                      <td class="text-right">Rp.320.000</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-lg-8">
+                    <div class="section-title">Metode Pembayaran</div>
+                    <p class="section-lead">
+                      Pembayaran melalui transfer bank mungkin terdapat perbedaan besar pajak
+                    </p>
+                    <div class="images mb-4">
+                      <img class="rounded" src="https://cdn-2.tstatic.net/bangka/foto/bank/images/logo-bank-bri.jpg" alt="paypal" width="90px">
+                    </div>
+                    <a href="pelanggan-home.html" class="btn btn-lg btn-primary"><i class="bx bx-fw bx-left-arrow-alt"></i> Kembali Ke Halaman Utama</a>
+                  </div>
+                  <div class="col-lg-4 text-right">
+                    <div class="invoice-detail-item">
+                      <div class="invoice-detail-name">Total Harga</div>
+                      <div class="invoice-detail-value">Rp.200.000</div>
+                    </div>
+                    <div class="invoice-detail-item">
+                      <div class="invoice-detail-name">Total Ongkos Kirim</div>
+                      <div class="invoice-detail-value">Rp.10.000</div>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <div class="invoice-detail-item">
+                      <div class="invoice-detail-name">Total Keseluruhan</div>
+                      <div class="invoice-detail-value invoice-detail-value-lg">Rp.210.000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- akhir konten utama -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="assets/img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- modal metode bayar -->
+  <div class="modal fade modal-bayar" id="modal-metode-bayar" tabindex="-1" aria-labelledby="modal-metode-bayarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-metode-bayarLabel">Pilih Metode Pembayaran</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-alfamart" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-alfamart">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/ALFAMART_LOGO_BARU.png" alt=""
+                class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">ALFAMART</h6>
+                <p class="text-muted mt-0">Bayar Melalui Alfamart Cabang Terdekat</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-indomaret" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-indomaret">
+              <img src="https://upload.wikimedia.org/wikipedia/id/0/04/Logo_Indomaret.svg" alt="" class="image mr-3"
+                width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">INDOMARET</h6>
+                <p class="text-muted mt-0">Bayar Melalui Indomaret Cabang Terdekat</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-bni" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-bni">
+              <img src="https://infobanknews.com/wp-content/uploads/2018/05/logo-BNI-46-1.png" alt="" class="image mr-3"
+                width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank BNI</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-bri" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-bri">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/BRI_2020.svg/1200px-BRI_2020.svg.png"
+                alt="" class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank BRI</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-bca" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-bca">
+              <img src="https://cdn.worldvectorlogo.com/logos/bca-bank-central-asia.svg" alt="" class="image mr-3"
+                width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank BCA</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-mandiri" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-mandiri">
+              <img src="https://logos-download.com/wp-content/uploads/2016/06/Bank_Mandiri_logo_white_bg.png" alt=""
+                class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank Mandiri</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-cod" name="customRadio" class="radio custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-cod">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/002/952/794/small/cash-on-delivery-steacker-free-vector.jpg"
+                alt="" class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Cash On Delivery (COD)</h6>
+                <p class="text-muted mt-0">Bayar Setelah Barang Diterima</p>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal"
+            href="#modal-input-rekening" id="go-to-rekening">Lanjut</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal metode bayar -->
+
+  <!-- modal input rekening -->
+  <div class="modal fade modal-bayar" id="modal-input-rekening" tabindex="-1" aria-labelledby="modal-metode-bayarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+
+        <div class="modal-body p-4">
+          <div class="form-group">
+            <label for="">Masukkan Nomor Rekening</label>
+            <input type="number" class="form-control" name="" id="" aria-describedby="helpId">
+            <small id="helpId" class="form-text text-muted">Jika anda membayar melalui teller bank, isikan dengan
+              "0000"</small>
+          </div>
+          <div class="form-group">
+            <label for="">Atas Nama</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" type="button" id="swal-proses-pembayaran">Proses Pembayaran <i class="bx bx-fw bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal input rekening -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/jquery.selectric.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

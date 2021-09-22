@@ -161,79 +161,90 @@
     <section class="section mt-4">
       <div class="section-body">
         <div class="row">
-          <div class="keranjang col-lg-8 col-md-8 col-12 mt-4">
-            <h5><b>Keranjang Pemesanan</b></h5>
-            <div class="d-flex justify-content-between mt-3">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Pilih Semua</label>
-              </div>
-              <a href="javascript:void(0);" class="text-primary">Hapus Semua</a>
-            </div>
-            <hr class="hr-keranjang">
-            <div class="per-toko">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                <label class="custom-control-label" for="customCheck4">Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></label><br>
-                <p class="text-muted">Kampung Santan Guwosari Pajangan Bantul</p>
-              </div>
-              <div class="per-produk">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck5">
-                  <label class="custom-control-label" for="customCheck5">
-                    <div class="d-flex mb-2">
-                      <div>
-                        <img src="assets/img/produk/ingkung-waroeng-ndesso.png" width="70px" height="70px" alt="" class="rounded image gambar-produk-keranjang">
-                      </div>
-                      <div class="ml-3">
-                        <p class="mb-0">Waroeng nDesso-Nasi Tumpeng Ingkung (x1)</p>
-                        <b class="mt-0">Rp. 200.000</b>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div>
-                        <a class="text-primary" data-toggle="collapse" href="#tinjauan-catatan-beli-1" role="button" aria-expanded="false" aria-controls="tinjauan-catatan-beli-1"> <i class="bx bx-fw bx-edit" aria-hidden="true"></i> Tinjau Kembali Catatan
-                        </a>
-                        <div class="mt-2 collapse" id="tinjauan-catatan-beli-1">
-                          <textarea class="form-control" name="" id="" rows="3">Minta tambahan sambalnya dipisah</textarea>
-                        </div>
-                      </div>
-                      <a href="" class="text-danger">
-                        <i class="fas fa-trash-alt"></i>
-                      </a>
-                    </div>
-                  </label>
+          <div class="col-md-4 col-12">
+            <div class="card">
+              <div class="card-body container">
+                <div class="form-group d-flex justify-content-center">
+                  <div class="upload-gambar form-group">
+                    <img id="blah" width="100%" src="assets/img/avatar/foto.png" class="mb-3 image rounded"/>
+                    <input accept="image/*" type='file' id="imgInp"/>
+                  </div>
                 </div>
+                <p class="text-justify text-muted">
+                  Besar file: maksimum 10.000.000 bytes (10 Megabytes). Ekstensi file yang diperbolehkan: .JPG .JPEG
+                  .PNG
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="ringkasan-belanja col-lg-4 col-md-4 col-12">
+          <div class="col-md-8 col-12">
             <div class="card">
-              <div class="card-body">
-                <h6 class="text-dark">Ringkasan Pemesanan</h6>
-                <div class="row mt-3 mb-3">
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <p>Total Harga (X1)</p>
+              <div class="card-body container">
+                <div class="data-diri">
+                  <h5 class="mb-4">Ubah Data Diri</h5>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Nama Lengkap</p>
+                    <div class="form-group">
+                      <input type="text" class="form-control" value="Reza Febriansyah">
+                    </div>
                   </div>
-                  <div class="col-6 col-md-6 col-12">
-                    <b>Rp. 140.000</b>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Tanggal Lahir</p>
+                    <div class="form-group">
+                      <input type="date" class="form-control" value="2000-02-07">
+                    </div>
+                  </div>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Jenis Kelamin</p>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="" checked="checked">
+                      <label class="custom-control-label" for="customRadioInline1">Laki-laki</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline2">Perempuan </label>
+                    </div>
+                  </div>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Alamat Utama</p>
+                    <div class="form-group">
+                      <textarea class="form-control">Jl Gang Migunani, Tamantirto, Kasihan, Bantul D I Yogyakarta, Indonesia</textarea>
+                    </div>
                   </div>
                 </div>
                 <hr>
-                <div class="total-keseluruhan row mt-3 mb-3 text-dark">
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <b>Total Keseluruhan</b>
+                <div class="info-akun">
+                  <h5 class="mb-4">Ubah Informasi Akun</h5>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Email</p>
+                    <div class="form-group">
+                      <input type="text" class="form-control" value="reza.febri72@gmail.com">
+                    </div>
                   </div>
-                  <div class="col-6 col-md-6 col-12">
-                    <b>Rp. 460.000</b>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Nomor Telepon</p>
+                    <div class="form-group">
+                      <input type="text" class="form-control" value="08979443076">
+                    </div>
+                  </div>
+                  <div class="d-flex text-justify">
+                    <p class="text-dark mr-4">Password</p>
+                    <p>***************</p>
+                    <a href="ubah-password.html" class="text-sprimary ml-4">
+                      <p>Ubah Password ?</p>
+                    </a>
                   </div>
                 </div>
-                <a href="pelanggan-checkout.html" class="btn btn-primary btn-lg mr-2 text-center d-flex justify-content-center">Proses Checkout</a>
+                <hr>
+                <button id="swal-edit-akun-profil" class="btn btn-lg btn-primary">
+                  <i class="bx bx-fw bx-save" aria-hidden="true"></i> Simpan
+                </button>
+                <a href="pelanggan-akun-profil.html" class="btn btn-lg btn-danger">
+                  <i class="bx bx-fw bx-x" aria-hidden="true"></i> Batalkan
+                </a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
