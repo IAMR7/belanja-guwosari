@@ -14,7 +14,7 @@
 <body>
 
   <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/white.png" width="200px" alt="">
@@ -43,14 +43,14 @@
                     <img alt="image" width="35px" src="assets/img/warung-ndeso.png" class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
-                    <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-secondary'></i></b>
+                    <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b>
                     <p>Yang bumbu rica rica nya sedang kosong</p>
                     <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
                   </div>
                 </a>
               </div>
               <div class="dropdown-footer text-center mt-3">
-                <a href="pelanggan-chat.html" class="link-main-color">Lihat Semua <i
+                <a href="pelanggan-chat.html" class="text-primary">Lihat Semua <i
                     class="bx bx-fw bx-chevron-right"></i></a>
               </div>
             </div>
@@ -66,7 +66,7 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
               <div class="dropdown-header">Notifikasi (1)
                 <div class="float-right">
-                  <a class="link-main-color" href="#">Tandai Semua Terbaca</a>
+                  <a class="text-primary" href="#">Tandai Semua Terbaca</a>
                 </div>
               </div>
               <div class="dropdown-list-content">
@@ -173,7 +173,7 @@
         </div>
         <div class="produk-checkout">
           <h6>Pesanan 1</h6>
-          <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-secondary'></i></b>
+          <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b>
           <div class="row mt-3">
             <div class="col-6">
               <div class="per-produk">
@@ -185,7 +185,7 @@
                     </div>
                     <div class="ml-3">
                       <p class="mb-0">Waroeng nDesso-Nasi Tumpeng Ingkung (x1)</p>
-                      <b class="mt-0">Rp. 200.000</b>
+                      <b class="mt-0 text-warning">Rp. 200.000</b>
                     </div>
                   </div>
                 </label>
@@ -209,7 +209,7 @@
               aria-controls="totalharga2"><b>Rp. 210.000</b> <i class="fas fa-chevron-down"></i></a>
           </div>
           <div class="collapse multi-collapse" id="totalharga2">
-            <div class="ket-harga-1 d-flex justify-content-between">
+            <div class="mt-3 ket-harga-1 d-flex justify-content-between">
               <p>Harga 1 Produk</p>
               <b class="text-dark">Rp. 200.000</b>
             </div>
@@ -225,24 +225,16 @@
         <div class="card">
           <div class="card-body">
             <h6 class="text-dark">Ringkasan Pemesanan</h6>
-            <div class="row mt-3 mb-3">
-              <div class="col-lg-6 col-md-6 col-12">
-                <p>Total Harga (x1)</p>
-              </div>
-              <div class="col-6 col-md-6 col-12">
-                <b>Rp. 210.000</b>
-              </div>
-            </div>
             <hr>
             <div class="total-keseluruhan row mt-3 mb-3 text-dark">
               <div class="col-lg-6 col-md-6 col-12">
-                <b>Total Keseluruhan</b>
+                <b>Total Harga (x1)</b>
               </div>
               <div class="col-6 col-md-6 col-12">
-                <b>Rp. 210.000</b>
+                <b class="text-warning">Rp. 210.000</b>
               </div>
             </div>
-            <a class="btn btn-block bg-main-color text-center" data-toggle="modal"
+            <a class="btn btn-block btn-primary text-center" data-toggle="modal"
               data-target="#modal-metode-bayar">Metode Pembayaran</a>
           </div>
         </div>
@@ -257,7 +249,7 @@
   <!-- akhir konten utama -->
 
   <!-- footer -->
-  <footer class="mt-5 py-5 text-white">
+  <footer class="mt-5 py-5 text-white bg-primary">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md">
@@ -386,7 +378,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a class="btn bg-main-color" type="button" data-dismiss="modal" data-toggle="modal"
+          <a class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal"
             href="#modal-input-rekening" id="go-to-rekening">Lanjut</a>
         </div>
       </div>
@@ -413,8 +405,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a class="btn bg-main-color" type="button" id="swal-proses-pembayaran">Proses Pembayaran <i
-              class="bx bx-fw bx-right-arrow-alt"></i></a>
+          <a class="btn btn-primary" type="button" id="swal-proses-pembayaran">Proses Pembayaran <i class="bx bx-fw bx-right-arrow-alt"></i></a>
         </div>
       </div>
     </div>

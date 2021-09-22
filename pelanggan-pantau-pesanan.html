@@ -14,7 +14,7 @@
 <body>
 
   <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/white.png" width="200px" alt="">
@@ -43,14 +43,14 @@
                     <img alt="image" width="35px" src="assets/img/warung-ndeso.png" class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
-                    <b>Waroeng nDesso <i class='bx bx-fw bx-badge-check text-info'></i></b>
+                    <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b>
                     <p>Yang bumbu rica rica nya sedang kosong</p>
                     <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
                   </div>
                 </a>
               </div>
               <div class="dropdown-footer text-center mt-3">
-                <a href="pelanggan-chat.html" class="link-main-color">Lihat Semua <i
+                <a href="pelanggan-chat.html" class="text-primary">Lihat Semua <i
                     class="bx bx-fw bx-chevron-right"></i></a>
               </div>
             </div>
@@ -66,7 +66,7 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
               <div class="dropdown-header">Notifikasi (1)
                 <div class="float-right">
-                  <a class="link-main-color" href="#">Tandai Semua Terbaca</a>
+                  <a class="text-primary" href="#">Tandai Semua Terbaca</a>
                 </div>
               </div>
               <div class="dropdown-list-content">
@@ -147,10 +147,10 @@
   <div class="nav-scroller bg-white shadow-sm">
     <div class="container">
       <nav class="nav nav-underline d-flex justify-content-center">
-        <a class="nav-link link-main-color" href="#">Utama</a>
-        <a class="nav-link" href="#">Belanja</a>
-        <a class="nav-link" href="#">Wisata</a>
-        <a class="nav-link" href="#">Tentang</a>
+        <a class="nav-link text-primary" href="pelanggan-home.html">Utama</a>
+        <a class="nav-link" href="pelanggan-belanja.html">Belanja</a>
+        <a class="nav-link" href="pelanggan-wisata.html">Wisata</a>
+        <a class="nav-link" href="pelanggan-tentang.html">Tentang</a>
       </nav>
     </div>
   </div>
@@ -190,8 +190,7 @@
                         <div class="detail-pesanan">
                           <div class="d-flex justify-content-between mb-3">
                             <h6>Pesanan (Belum Bayar)</h6>
-                            <a id="swal-batal-transaksi" href="" class="btn btn-sm bg-main-color ml-3">Batalkan
-                              Transaksi</a>
+                            <a id="swal-batal-transaksi" href="" class="btn btn-sm btn-danger ml-3">Batalkan Transaksi</a>
                           </div>
                           <p class="mb-0">Total: <b class="text-warning">Rp. 160.000</b></p>
                           <p>Tanggal Pemesanan: <b>22 Juni 2021</b></p>
@@ -217,9 +216,9 @@
                       <p>Unggah bukti pembayaran</p>
                       <div class="upload-gambar form-group">
                         <input accept="image/*" type='file' id="imgInp"/>
-                        <img id="blah" width="100%" src="#" class="mt-3 image rounded"/>
+                        <img id="blah" width="100%" src="assets/img/example-image.jpg" class="mt-3 image rounded"/>
                       </div>
-                      <a class="btn btn-block bg-main-color" id="swal-2" data-width="100%">
+                      <a class="btn btn-block btn-primary btn-lg" id="swal-2" data-width="100%">
                         Konfirmasi
                       </a>
                     </div>
@@ -239,11 +238,11 @@
                         <i class="fa fa-truck text-success mr-3 icon-shop" aria-hidden="true"></i>
                         <div>
                           <h6>Proses Pengiriman</h6>
-                          <p class="mb-0">Nama Produk : <b>Ingkung Kuali 1-Ingkung Rica-rica Sedang</b></p>
+                          <p class="mb-0">Nama Produk : <b>Waroeng nDesso-Nasi Tumpeng Ingkung</b></p>
                           <p class="mb-0">Pengiriman Dengan : <b>GOJEK</b><br> Tanggal Pemesanan : <b>22 Juni 2021</b>
                           </p>
                           <p class="mb-0">
-                            Estimasi Tiba : <b class="text-warning">25 Menit</b>
+                            Estimasi Tiba : <b class="text-warning">20 Menit</b>
                           </p>
                         </div>
                       </div>
@@ -251,7 +250,7 @@
                     <div class="col-lg-4 col-md-4 col-12">
                       <img src="https://kastara.id/wp-content/uploads/2019/10/Gojek-logo.jpg" alt="" class="image mb-3"
                         width="100px" height="50px">
-                      <img src="assets/img/produk/ingkung-kuali-1.png" alt="" class="image-fluid" width="100%">
+                      <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="image-fluid rounded" width="100%">
                     </div>
                   </div>
                 </div>
@@ -277,7 +276,7 @@
                     <div class="col-lg-4 col-md-4 col-12">
                       <img src="https://kastara.id/wp-content/uploads/2019/10/Gojek-logo.jpg" alt="" class="image mb-3"
                         width="100px" height="50px">
-                      <img src="assets/img/produk/ingkung-kuali-1.png" alt="" class="image-fluid" width="100%">
+                      <img src="assets/img/produk/ingkung-kuali-1.png" alt="" class="rounded image-fluid" width="100%">
                     </div>
                   </div>
                 </div>
@@ -295,7 +294,7 @@
                         <i class="fas fa-check text-success mr-3 icon-shop" aria-hidden="true"></i>
                         <div>
                           <h6>Pesanan Berhasil Diterima</h6>
-                          <p class="mb-0">Nama Produk : <b>Ingkung Kuali 1-Ingkung Rica-rica Sedang</b></p>
+                          <p class="mb-0">Nama Produk : <b>Waroeng nDesso-Nasi tumpeng Ingkung</b></p>
                           <p class="mb-0">Pengiriman Dengan : <b>GOJEK</b><br> Tanggal Pemesanan : <b>22 Juni 2021</b>
                           </p>
                           <div class="form-group ulasan mt-4">
@@ -310,7 +309,7 @@
                                 <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
                                 <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
                               </div>
-                              <a href="#" type="button" id="swal-ulasan" class="btn bg-main-color">Kirim Ulasan</a>
+                              <a href="#" type="button" id="swal-ulasan" class="btn btn-primary">Kirim Ulasan</a>
                             </div>
                           </div>
                         </div>
@@ -319,7 +318,7 @@
                     <div class="col-lg-4 col-md-4 col-12">
                       <img src="https://kastara.id/wp-content/uploads/2019/10/Gojek-logo.jpg" alt="" class="image mb-3"
                         width="100px" height="50px">
-                      <img src="assets/img/produk/ingkung-kuali-1.png" alt="" class="image-fluid" width="100%">
+                      <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded image-fluid" width="100%">
                     </div>
                   </div>
                 </div>
@@ -338,7 +337,7 @@
   <!-- akhir konten utama -->
 
   <!-- footer -->
-  <footer class="mt-5 py-5 text-white">
+  <footer class="mt-5 py-5 text-white bg-primary">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md">

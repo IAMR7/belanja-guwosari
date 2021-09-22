@@ -21,16 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-a.btn.bg-main-color {
-  background-color: #38c5a0;
-  color: white;
-}
-
-a.link-main-color {
-  color: #38c5a0 !important;
-  text-decoration: none;
-}
-
 .btn {
   font-size: 12px;
 }
@@ -315,21 +305,9 @@ div.modal-login div.form-group input.form-control {
   padding: 20px;
 }
 
-div.modal-login label.d-flex a,
-div.modal-login p.link-daftar a,
-div.card-daftar p.link-login a,
-div.form-login p.link-back-daftar a {
-  color: #38c5a0;
-}
-
-div.modal-login div.modal-footer a {
-  background-color: #38c5a0;
-  color: white;
-}
-
 /* LOGIN */
 body.login-page {
-  background-image: url("/img/bg-login.jpg");
+  background-image: url("/assets/img/bg-login.jpg");
   background-size: cover;
   background-repeat: repeat-y;
 }
@@ -425,9 +403,6 @@ div.lupa-password a.btn-kirim-kode {
 }
 
 /* NAVBAR */
-nav.navbar {
-  background-color: #38c5a0;
-}
 
 button.navbar-toggler {
   border: none;
@@ -813,10 +788,6 @@ section.section-chat .file-group input[type="file"] {
   width: 20px
 }
 
-section.section-chat .text-info {
-  color: #38c5a0 !important;
-}
-
 /* CARD PRODUK */
 section.section-list-produk a.href-produk {
   text-decoration: none;
@@ -911,20 +882,12 @@ div.form-group.ulasan {
 }
 
 /* CARD WISATA */
-section.section-wisata div.card-group div.card h5.card-title {
-  font-size: 18px;
-  color: #38c5a0;
-}
 
 section.section-wisata div.card-group div.card p.card-text {
   font-size: 14px;
 }
 
 /* FOOTER */
-footer {
-  background-color: #38c5a0;
-}
-
 footer li a {
   font-size: 14px;
 }
