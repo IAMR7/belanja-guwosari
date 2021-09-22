@@ -101,6 +101,9 @@ imgInp.onchange = evt => {
     }
 }
 
+// CHAT
+"use strict";
+
 var chats = [
   {
     text: 'Hi, dude!',

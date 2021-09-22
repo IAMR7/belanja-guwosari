@@ -159,20 +159,20 @@
 
   <!-- konten utama -->
   <main role="main" class="container">
-    <section class="section">
+    <section class="section section-chat mt-4">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-12">
-          <div class="card">
+          <div class="card list-chat-penjual">
             <div class="card-header">
-              <h4>Chat Penjual</h4>
+              <h5>Chat Penjual</h5>
             </div>
             <div class="card-body">
               <ul class="list-unstyled list-unstyled-border">
                 <li class="media">
-                  <img alt="image" class="mr-3 rounded-circle" width="50" src="assets/img/warung-ndeso.png">
+                  <img alt="image" class="mr-3 rounded-circle" width="50" src="img/warung-ndeso.png">
                   <div class="media-body">
-                    <div class="mt-0 mb-1 font-weight-bold">Waroeng nDesso <i class='bx bx-fw bx-badge-check text-success'></i></div>
-                    <div class="text-success text-small font-600-bold"><i class="fas fa-circle"></i> Online</div>
+                    <h6 class="mt-0 font-weight-bold">Waroeng nDesso <i class='bx bx-fw bx-badge-check text-info'></i></h6>
+                    <div class="text-success mb-3"><i class="bx bx-fw bxs-circle"></i> Online</div>
                     <p>
                       Yang bumbu rica rica nya sedang kosong...
                     </p>
@@ -185,16 +185,14 @@
         <div class="col-lg-8 col-md-8 col-12">
           <div class="card chat-box card-success" id="mychatbox4">
             <div class="card-header">
-              <h4><i class="fas fa-circle text-success mr-2" title="Online" data-toggle="tooltip"></i> Waroeng nDesso <i class='bx bx-fw bx-badge-check text-success'></i></h4>
+              <h5><i class="fas fa-circle text-success mr-2" title="Online" data-toggle="tooltip"></i> Waroeng nDesso <i class='bx bx-fw bx-badge-check text-info'></i></h5>
             </div>
             <div class="card-body chat-content">
             </div>
             <div class="card-footer chat-form">
-              <form id="chat-form4">
-                <input type="text" class="form-control" placeholder="Tulis Pesan ...">
-                <button class="btn btn-success">
-                  <i class="far fa-paper-plane"></i>
-                </button>
+              <form id="chat-form4" class="d-flex">
+                <input type="text" class="form-control mr-3" placeholder="Tulis Pesan ...">
+                <a class="btn bg-main-color text-center">Kirim</a>
               </form>
             </div>
           </div>
@@ -257,7 +255,6 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.selectric.js"></script>
-  <script src="js/tes.js"></script>
   <script src="js/script.js"></script>
 
 </body>
