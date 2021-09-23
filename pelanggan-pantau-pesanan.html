@@ -190,7 +190,7 @@
                         <div class="detail-pesanan">
                           <div class="d-flex justify-content-between mb-3">
                             <h6>Pesanan (Belum Bayar)</h6>
-                            <a id="swal-batal-transaksi" href="" class="btn btn-sm btn-danger ml-3">Batalkan Transaksi</a>
+                            <a href="#" type="button" data-toggle="modal" data-target="#modal-batal-transaksi" class="btn btn-sm btn-danger ml-3">Batalkan Transaksi</a>
                           </div>
                           <p class="mb-0">Total: <b class="text-warning">Rp. 160.000</b></p>
                           <p>Tanggal Pemesanan: <b>22 Juni 2021</b></p>
@@ -373,6 +373,30 @@
     </div>
   </footer>
   <!-- footer -->
+
+  <!-- modal batal transaksi -->
+  <div class="modal fade modal-batal-transaksi" id="modal-batal-transaksi" tabindex="-1" aria-labelledby="modal-batal-transaksiLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="modal-batal-transaksiLabel">Halo, Reza !</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">Pilih alasan pembatalanmu dibawah ini ya</label>
+            <input type="text" class="form-control" aria-describedby="helpId" placeholder="Contoh: saya salah memesan produk">
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <a href="#" id="swal-verifikasi-pembatalan" class="btn btn-danger btn-lg btn-block">Batalkan Pesanan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal batal transaksi -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

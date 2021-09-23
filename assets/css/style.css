@@ -789,7 +789,7 @@ section.section-chat .file-group input[type="file"] {
 }
 
 /* CARD PRODUK */
-section.section-list-produk a.href-produk {
+a.href-produk, a.card-konten-edukasi {
   text-decoration: none;
 }
 
@@ -855,6 +855,25 @@ div.balasan-penjual {
   border-radius: 10px;
 }
 
+/* PROFIL TOKO */
+div.header-profil-toko {
+  padding: 20px;
+  box-shadow:4px 4px 20px 0.5px rgb(211, 211, 211);
+  border-radius: 15px;
+}
+
+div.header-profil-toko div.col-lg-6.col-md-6.col-12.d-flex:nth-child(2){
+  margin-top: 20px;
+}
+
+div.header-profil-toko img {
+  border-radius: 50px;
+}
+
+div.nilai-kualitas-produk div.text-warning i {
+  font-size: 20px;
+}
+
 /* PANTAU PESANAN */
 div.section-pantau-pesanan ul li a.nav-link {
   color: #444;
@@ -885,6 +904,55 @@ div.form-group.ulasan {
 
 section.section-wisata div.card-group div.card p.card-text {
   font-size: 14px;
+}
+
+div.wisata a.produk img.image {
+  position: relative;
+}
+
+div.wisata a.produk div.card-img-overlay {
+  background-color: #38c5a0;
+  opacity: 80%;
+}
+
+div.cari-wisata {
+  width: 100%;
+}
+
+div.wisata-layout-kanan img {
+  width: 35%;
+  height: 30%;
+}
+
+div.body-artikel-wisata {
+  color: #6c757d ;
+}
+
+a.share-sosmed {
+  border-radius: 500px;
+}
+
+div.rekomendasi-wisata {
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 10px;
+  width: 100%;
+}
+
+div.rekomendasi-wisata img {
+  width: 100%;
+}
+
+div.rekomendasi-wisata h5, div.artikel-umum h5 {
+  color: #6c757d;
+}
+
+a.card-konten-edukasi p {
+  font-size: 14.5px;
+}
+
+/* TENTANG */
+div.konten-utama-tentang img {
+  width: 100%;
 }
 
 /* FOOTER */
@@ -953,4 +1021,21 @@ nav#sidebarMenu li a {
   nav.navbar div.d-flex a {
     padding: 10px;
   }
+
+  div.cari-wisata {
+    width: 40%;
+  }
+
+  div.wisata-layout-kanan img {
+    width: 35%;
+  }
+
+  div.konten-utama-tentang img {
+    width: 40%;
+  }
+
+  div.header-profil-toko div.col-lg-6.col-md-6.col-12.d-flex:nth-child(2) {
+    margin-top: 0;
+  }
+
 }

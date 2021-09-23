@@ -34,7 +34,7 @@ $(document).ready(function() {
         
 });
 
-// SWEET ALERT SUCCESS
+// SWEET ALERT MASUK KERANJANG
 $("#swal-masuk-keranjang").click(function() {
 	swal('Berhasil !', 'Pesanan telah ditambahkan dalam keranjang', 'success');
     setTimeout(function(){
@@ -70,6 +70,15 @@ $("#swal-logout").click(function() {
     });
 });
 
+// SWEET ALERT BATAL TRANSAKSI
+
+$("#swal-verifikasi-pembatalan").click(function() {
+	swal('Berhasil !', 'Pesanan anda berhasil dibatalkan', 'success');
+    setTimeout(function(){ 
+        window.location.href = "pelanggan-home.html";
+    }, 1500);
+});
+
 // SWEET ALERT EDIT AKUN PROFIL
 $("#swal-edit-akun-profil").click(function() {
     swal({
@@ -81,7 +90,7 @@ $("#swal-edit-akun-profil").click(function() {
       })
       .then((willDelete) => {
         if (willDelete) {
-            swal('Pembayaran Berhasil !', 'Terimakasih telah berbelanja', 'success');
+            swal('Berhasil Edit Profil', 'Profil anda telah diperbaharui', 'success');
             setTimeout(function(){ 
                 window.location.href = "pelanggan-akun-profil.html";
             }, 1500);

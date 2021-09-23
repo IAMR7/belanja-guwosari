@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/white.png" width="200px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari sesuatu ..." aria-label="Search">
+          </form>
+          
+          <!-- dropdown chat -->
+          <div class="dropdown dropdown-chat mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-chat"></i>Chat
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+              <div class="dropdown-header">Pesan Masuk (1)</div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item d-flex">
+                  <div class="dropdown-item-avatar mr-2">
+                    <img alt="image" width="35px" src="assets/img/warung-ndeso.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b>
+                    <p>Yang bumbu rica rica nya sedang kosong</p>
+                    <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center mt-3">
+                <a href="pelanggan-chat.html" class="text-primary">Lihat Semua <i class="bx bx-fw bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown chat -->
+
+          <!-- dropdown notifikasi -->
+          <div class="dropdown dropdown-notif mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-bell"></i>Notifikasi
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+              <div class="dropdown-header">Notifikasi (1)
+                <div class="float-right">
+                  <a class="text-primary" href="#">Tandai Semua Terbaca</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content">
+                <a href="javascript:void(0);" class="dropdown-item d-flex">
+                  <div class="dropdown-item-icon text-success">
+                    <i class="bx bx-fw bx-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Berhasil memesan produk pertama anda !
+                    <div class="time text-muted">
+                      <small>2 menit yang lalu</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown notifikasi -->
+
+          <!-- dropdown keranjang -->
+          <div class="dropdown dropdown-keranjang mt-1 mr-3">
+            <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuKeranjang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-fw bx-cart"></i>Keranjang
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right" aria-labelledby="dropdownMenuKeranjang">
+              <div class="dropdown-header">Total Pesanan : 1
+                <div class="float-right">
+                  <p class="text-warning">Rp. 200.000</p>
+                </div>
+              </div>
+              <div class="dropdown-list-content">
+
+                <a href="pelanggan-keranjang.html" class="dropdown-item d-flex">
+                  <div class="dropdown-item-avatar mr-3">
+                    <img alt="image" class="rounded" width="50px" src="assets/img/produk/ingkung-waroeng-ndesso.png">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Ingkung Waroeng nDesso- <br> Nasi Tumpeng Ingkung</b>
+                    <p class="text-warning">Rp. 200.000</p>
+                    <div class="time">Jumlah Pesanan : 1</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <!-- end dropdown keranjang -->
+
+          <!-- dropdown profil -->
+          <div class="dropdown mt-1">
+            <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/avatar/foto.png" width="30px" alt=""> Reza Febriansyah
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item mb-2" href="pelanggan-akun-profil.html">
+                <i class="bx bx-fw bx-user"></i> Akun Profil
+              </a>
+              <a class="dropdown-item mb-2" href="pelanggan-halaman-umkm.html">
+                <i class="bx bx-fw bxs-store"></i> Halaman UMKM
+              </a>
+              <a class="dropdown-item mb-2" href="pelanggan-pantau-pesanan.html">
+                <i class="bx bx-fw bxs-truck"></i> Pantau Pesanan
+              </a>
+              <a class="dropdown-item text-danger" type="button" id="swal-logout">
+                <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+              </a>
+            </div>
+          </div>
+          <!-- end dropdown profil -->
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-scroller bg-white shadow-sm">
+    <div class="container">
+      <nav class="nav nav-underline d-flex justify-content-center">
+        <a class="nav-link text-primary" href="pelanggan-home.html">Utama</a>
+        <a class="nav-link" href="pelanggan-belanja.html">Belanja</a>
+        <a class="nav-link" href="pelanggan-wisata.html">Wisata</a>
+        <a class="nav-link" href="pelanggan-tentang.html">Tentang</a>
+      </nav>
+    </div>
+  </div>
+  <!-- akhir header -->
+
+  <!-- konten utama -->
+  <main role="main" class="container">
+
+    <section class="section mt-4">
+      <div class="section-body">
+
+        <!-- HEADER TOKO -->
+        <div class="header-profil-toko row bg-white mb-4">
+          <div class="col-lg-6 col-md-6 col-12 d-flex">
+            <img src="assets/img/warung-ndeso.png" alt="" class="image" width="80px" height="80px">
+            <div class="ml-4">
+              <h5 class="text-dark">Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></h5>
+              <b>1.5K Pengikut</b><br>
+              <button class="btn btn-primary mt-3">
+                <i class="bx bx-fw bx-plus" aria-hidden="true"></i> Follow
+              </button>
+              <a class="btn btn-outline-primary mt-3">
+                <i class="bx bx-fw bx-chat" aria-hidden="true"></i> Chat
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 d-flex">
+            <div>
+              <p>Produk Dijual</p>
+              <h3 class="text-dark">39</h3>
+            </div>
+            <div class="ml-5">
+              <p>Nilai Kualitas Produk</p>
+              <div class="d-flex nilai-kualitas-produk">
+                <h4 class="text-dark">4.8</h4>
+                <div class="text-warning ml-3">
+                  <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                  <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                  <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                  <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                  <i class="bx bx-fw bx-star" aria-hidden="true"></i>
+                </div>
+                <b class="text-dark ml-2">(547 Ulasan)</b>
+              </div>
+              <p>Bergabung Sejak : <b>5 Bulan yang lalu</b></p>
+            </div>
+          </div>
+        </div>
+        <!-- END HEADER TOKO -->
+
+        <div class="d-flex justify-content-between mb-3">
+          <h6>Produk Waroeng nDesso</h6>
+          <!-- <a href="#" class="text-primary">Lihat Semua</a> -->
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <a class="href-produk" href="pelanggan-detail-produk.html">
+              <div class="card card-produk">
+                <img src="assets/img/produk/ingkung-waroeng-ndesso.png" height="140px" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="nama-produk text-justify">Waroeng Ndesso-Menu Nasi Tumpeng Ingkung</h6>
+                  <p class="harga">Rp. 200.000</p>
+                  <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+                </div>
+                <div class="aksi-produk text-center container">
+                  <a href="javascript:vodi(0);" data-toggle="modal" data-target="#modal-quantity" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
+                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <a href="pelanggan-detail-produk.html" class="href-produk">
+              <div class="card card-produk">
+                <img src="assets/img/produk/wd-2.png" height="140px" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="nama-produk text-justify">Waroeng nDesso-Paket Hantaran Ingkung</h6>
+                  <p class="harga">Rp. 300.000</p>
+                  <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+                </div>
+                <div class="aksi-produk text-center container">
+                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
+                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <a href="pelanggan-detail-produk.html" class="href-produk">
+              <div class="card card-produk">
+                <img src="assets/img/produk/wd-3.png" height="140px" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="nama-produk text-justify">Waroeng nDesso-Nasi Ingkung Besekan</h6>
+                  <p class="harga">Rp. 30.000</p>
+                  <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+                </div>
+                <div class="aksi-produk text-center container">
+                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
+                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <a href="pelanggan-detail-produk.html" class="href-produk">
+              <div class="card card-produk">
+                <img src="assets/img/produk/wd-4.png" height="140px" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="nama-produk text-justify">Waroeng nDesso-Gudeng Manggar Kandilan</h6>
+                  <p class="harga">Rp. 150.000</p>
+                  <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+                </div>
+                <div class="aksi-produk text-center container">
+                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
+                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <a href="pelanggan-detail-produk.html" class="href-produk">
+              <div class="card card-produk">
+                <img src="assets/img/produk/wd-5.png" height="140px" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="nama-produk text-justify">Waroeng nDesso-Gudeg Mbang Gedhang</h6>
+                  <p class="harga">Rp. 10.000</p>
+                  <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+                </div>
+                <div class="aksi-produk text-center container">
+                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
+                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <a href="pelanggan-detail-produk" class="href-produk">
+              <div class="card card-produk">
+                <img src="assets/img/produk/wd-6.png" height="140px" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="nama-produk text-justify">Waroeng nDesso-Gudeg Manggar</h6>
+                  <p class="harga">Rp. 50.000</p>
+                  <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
+                </div>
+                <div class="aksi-produk text-center container">
+                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
+                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- akhir konten utama -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="assets/img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- modal masuk keranjang -->
+  <div class="modal fade modal-login" id="modal-quantity" tabindex="-1" aria-labelledby="modal-quantityLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h6 class="modal-title" id="modal-quantityLabel">Kuantitas</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="button" class="quantity-left-minus btn btn-light" data-type="minus" data-field="">
+                <span class="bx bx-fw bx-minus"></span>
+              </button>
+            </span>
+            <input type="text" id="quantity" name="quantity" class="text-center form-control mr-2 ml-2" value="1" min="1" max="100">
+            <span class="input-group-btn">
+              <button type="button" class="quantity-right-plus btn btn-light" data-type="plus" data-field="">
+                <span class="bx bx-fw bx-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <a type="button" id="swal-masuk-keranjang" class="btn btn-primary btn-lg btn-block"><i class="bx bx-fw bx-cart"></i> Masuk Keranjang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal masuk keranjang -->
+
+  <!-- modal checkout -->
+  <div class="modal fade modal-login" id="modal-checkout" tabindex="-1" aria-labelledby="modal-checkoutLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h6 class="modal-title" id="modal-quantityLabel">Kuantitas</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="button" class="quantity-left-minus btn btn-light" data-type="minus" data-field="">
+                <span class="bx bx-fw bx-minus"></span>
+              </button>
+            </span>
+            <input type="text" id="quantity" name="quantity" class="text-center form-control mr-2 ml-2" value="1" min="1" max="100">
+            <span class="input-group-btn">
+              <button type="button" class="quantity-right-plus btn btn-light" data-type="plus" data-field="">
+                <span class="bx bx-fw bx-plus"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <a href="pelanggan-checkout.html" class="btn btn-lg btn-info btn-block">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal checkout -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
