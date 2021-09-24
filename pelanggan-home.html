@@ -120,7 +120,7 @@
               <a class="dropdown-item mb-2" href="pelanggan-akun-profil.html">
                 <i class="bx bx-fw bx-user"></i> Akun Profil
               </a>
-              <a class="dropdown-item mb-2" href="pelanggan-halaman-umkm.html">
+              <a class="dropdown-item mb-2" href="#" type="button" data-toggle="modal" data-target="#modal-daftar-umkm">
                 <i class="bx bx-fw bxs-store"></i> Halaman UMKM
               </a>
               <a class="dropdown-item mb-2" href="pelanggan-pantau-pesanan.html">
@@ -574,6 +574,50 @@
     </div>
   </div>
   <!-- end modal checkout -->
+
+  <!-- modal daftar UMKM -->
+  <div class="modal fade modal-daftar-umkm" id="modal-daftar-umkm" tabindex="-1" aria-labelledby="modal-daftar-umkmLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="modal-daftar-umkmLabel">Daftar Mitra UMKM</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">Upload Foto Profil UMKM</label>
+            <div class="upload-gambar form-group">
+              <img id="blah" width="100%" src="assets/img/example-image.jpg" class="mb-3 image rounded"/>
+              <input accept="image/*" type='file' id="imgInp"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Nama Gerai/Warung/Toko</label>
+            <input type="text" class="form-control" aria-describedby="helpId" placeholder="Misal: Waroeng nDesso">
+          </div>
+          <div class="form-group">
+            <label for="">Nama Pemilik</label>
+            <input type="text" class="form-control" aria-describedby="helpId">
+          </div>
+          <div class="form-group">
+            <label for="">NIK Pemilik</label>
+            <input type="number" class="form-control" aria-describedby="helpId">
+            <small class="text-help text-muted">Sesuaikan dengan NIK pada KTP</small>
+          </div>
+          <div class="form-group">
+            <label for="">Alamat UMKM</label>
+            <textarea class="form-control" name="" id="" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <a href="#" id="swal-daftar-umkm" class="btn btn-primary btn-lg btn-block">Daftar UMKM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal daftar UMKM -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

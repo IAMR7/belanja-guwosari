@@ -120,6 +120,27 @@ $("#swal-proses-pembayaran").click(function() {
     });
 });
 
+// SWEET ALERT DAFTAR UMKM
+$("#swal-daftar-umkm").click(function() {
+    swal({
+        title: 'Apakah Data Sudah Benar ?',
+        text: 'Setelah menekan "OK" akun UMKM akan segera dibuat',
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+            swal('Akun UMKM Berhasil Dibuat !', 'Selamat Berjualan', 'success'); 
+            setTimeout(function(){
+                window.location.href = "umkm-home.html";
+            }, 1500);
+        } else {
+            swal('Batal daftar UMKM');
+        }
+    });
+});
+
 // SWEET ALERT INVOICE
 $("#swal-go-to-invoice").click(function() {
 	swal('Pembayaran Berhasil !', 'Terimakasih telah berbelanja', 'success');

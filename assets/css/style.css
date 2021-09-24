@@ -960,6 +960,10 @@ footer li a {
   font-size: 14px;
 }
 
+main.page-umkm footer {
+  width: 100%;
+}
+
 /* DASHBOARD */
 nav.nav-dashboard div.d-flex {
   width: 90%;
