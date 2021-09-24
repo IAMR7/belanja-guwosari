@@ -100,6 +100,27 @@ $("#swal-edit-akun-profil").click(function() {
     });
 });
 
+// SWEET ALERT EDIT PROFIL UMKM
+$("#swal-edit-profil-umkm").click(function() {
+    swal({
+        title: 'Simpan Perubahan ?',
+        text: 'Setelah menekan "OK" perubahan anda akan disimpan',
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+            swal('Berhasil Edit Profil', 'Profil UMKM telah diperbaharui', 'success');
+            setTimeout(function(){ 
+                window.location.href = "umkm-akun-profil.html";
+            }, 1500);
+        } else {
+            swal('Batal simpan perubahan');
+        }
+    });
+});
+
 // SWEET ALERT PROSES PEMBAYARAN
 $("#swal-proses-pembayaran").click(function() {
     swal({

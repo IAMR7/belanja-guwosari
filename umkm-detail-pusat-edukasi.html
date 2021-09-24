@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/mascot-primary.png" type="image/x-icon">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- sidebar -->
+  <nav class="navbar navbar-dashboard navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/white.png" alt="">
+      </a>
+      <div class="d-flex">
+
+        <!-- dropdown chat -->
+        <div class="dropdown dropdown-chat mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-chat"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+            <div class="dropdown-header">Pesan Masuk (1)</div>
+            <div class="dropdown-list-content dropdown-list-message">
+              <a href="#" class="dropdown-item d-flex">
+                <div class="dropdown-item-avatar mr-2">
+                  <img alt="image" width="35px" src="assets/img/avatar/foto.png" class="rounded-circle">
+                </div>
+                <div class="dropdown-item-desc">
+                  <b>Reza Febriansyah</b>
+                  <p>Yang bumbu rica rica nya sedang kosong</p>
+                  <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown-footer text-center mt-3">
+              <a href="umkm-chat.html" class="text-primary">Lihat Semua <i class="bx bx-fw bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown chat -->
+        
+        <!-- dropdown notifikasi -->
+        <div class="dropdown dropdown-notif mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-bell"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+            <div class="dropdown-header">Notifikasi (1)
+              <div class="float-right">
+                <a class="text-primary" href="#">Tandai Semua Terbaca</a>
+              </div>
+            </div>
+            <div class="dropdown-list-content">
+              <a href="javascript:void(0);" class="dropdown-item d-flex">
+                <div class="dropdown-item-icon text-primary">
+                  <i class="bx bx-fw bx-check"></i>
+                </div>
+                <div class="dropdown-item-desc">
+                  Akun UMKM berhasil dibuat !
+                  <div class="time text-muted">
+                    <small>2 menit yang lalu</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown notifikasi -->
+        
+        <!-- dropdown profil -->
+        <div class="dropdown">
+          <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/warung-ndeso.png" width="30px" class="image rounded rounded-circle" alt="">
+          </a>
+          
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item mb-2" href="umkm-akun-profil.html">
+              <i class="bx bx-fw bx-store"></i> Profil UMKM
+            </a>
+            <a class="dropdown-item text-danger" type="button" id="swal-logout">
+              <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+            </a>
+          </div>
+
+        </div>
+        <!-- end dropdown profil -->
+
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a class="nav-link btn btn-primary text-white" href="pelanggan-home.html">
+                <i class='bx bx-fw bx-left-arrow-alt'></i> Ke Akun Utama
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-home.html">
+                <i class='bx bx-fw bx-home-circle'></i>
+                Dashboard UMKM
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-kelola-produk.html">
+                <i class='bx bx-fw bx-file'></i>
+                Kelola Produk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-pesanan-masuk.html">
+                <i class='bx bx-fw bx-box'></i>
+                Pesanan Masuk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-cek-rekening.html">
+                <i class='bx bx-fw bx-credit-card'></i>
+                Cek Rekening
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link active" href="umkm-pusat-edukasi.html">
+                <i class='bx bx-fw bx-book'></i>
+                Pusat Edukasi
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-bantuan.html">
+                <i class='bx bx-fw bx-headphone'></i>
+                Bantuan
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="container page-umkm col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <section class="section mt-4">
+          <div class="section-body">
+
+            <div class="card">
+              <div class="card-body">
+                <div class="container">
+                  <a href="umkm-pusat-edukasi.html" class="btn btn-primary mb-4">
+                    <i class="bx bx-fw bx-left-arrow-alt"></i> Kembali
+                  </a>
+                  <img src="https://abckotaraya.id/wp-content/uploads/2021/03/Manajemen-Usaha-Bagi-UMKM.png" width="100%" class="image-fluid mb-4">
+                  <h4>Manajemen Usaha Bagi UMKM yang Perlu Dilakukan</h4>
+                  <small class="text-muted">
+                    <small class="badge badge-info mr-2">Wisata</small>Diunggah pada 15 Juli 2021
+                  </small>
+                  <div class="share-sosmed mb-4 mt-4">
+                    <a href="#" class="btn btn-light share-sosmed">
+                      <i class="fab bx bx-fw bxl-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="btn btn-light share-sosmed mr-3 ml-3">
+                      <i class="fab bx bx-fw bxl-instagram-alt" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="btn btn-light share-sosmed">
+                      <i class="fab bx bx-fw bxl-twitter" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <p class="text-justify">
+                    Mengelola satu usaha bukanlah hal mudah. Proses perencanaan, penentuan tujuan hingga menentukan strategi ada di dalamnya. Manajemen usaha tentu berlaku untuk seluruh jenis bisnis, baik itu skala kecil, menengah, hingga besar. Terlebih bagi pelaku UMKM, menerapkan manajemen usaha bagi UMKM sangat perlu dilakukan. Manajemen usaha dapat di definisikan sebagai salah satu upaya mengatur segala aspek dalam usaha agar mampu mencapai tujuan yang diinginkan. Manajemen bisnis akan berpengaruh terhadap pendapatan, penjualan, dan kualitas produk. Penerapan manajemen usaha akan menopang bisnis meraih kesuksesan dan mampu mengembangkan bisnis. Hal ini dilakukan untuk menopang usaha agar tetap beroperasi dan mencapai target yang telah direncanakan sebelumnya. Inti dari manajemen bisnis adalah penerapan beberapa hal pada bisnis Anda, seperti :
+
+                    <h5>Manajemen Usaha bagi UMKM dari Sisi SDM</h5>
+                    Sumber Daya Manusia (SDM) menjadi aspek paling penting dalam setiap usaha dimanapun. Kondisi SDM yang baik akan mendorong kualitas bisnis Anda lebih baik. Sangat diperlukan bagi pengusaha untuk memahami setiap usaha yang dimiliki dan di definisikan kepada semua SDM yang mereka miliki. <br><br>
+                    Jika dalam perusahaan besar, sebagai pebisnis Anda bisa meminta bagian Human Resources dalam mengurus SDM yang Anda miliki. Namun jika bisnis Anda masih dalam skala menengah, sebagai pemilik bisnis Anda juga yang mengelola SDM yang ada. <br><br>
+                    Manajemen SDM yang Anda lakukan tidak hanya sekedar penilaian terhadap kinerja karyawan. Namun Anda juga harus mengoptimalkan setiap individu untuk mampu menyelesaikan setiap pekerjaan secara efisien dan efektif. Selain itu, mereka mampu mendorong pengembangan perusahaan menjadi lebih optimal. <br><br>
+
+                    <h5>Menjalankan Strategi Pemasaran</h5>
+                    Strategi pemasaran menjadi hal penting yang di rumuskan dalam manajemen usaha. Dalam penentuan strategi pemasaran, pebisnis harus mampu menemukan strategi optimal dalam menjalankan bisnis. Sehingga brand yang dimiliki bisa dikenal oleh khalayak luas. <br><br>
+
+                    Ada beberapa hal yang harus dijalankan dalam strategi pemasaran. Semua dilakukan berdasarkan apa yang dibutuhkan oleh konsumen. Jangan sampai Anda hanya memikirkan dari sisi Anda, tanpa melihat dari konsumen. Hal ini disebut dengan STP (Segmentasi, Target, dan Posisi Produk). Metode ini akan melihat kebutuhan dan keinginan konsumen. <br><br>
+
+                    Selain itu, Anda juga harus menggunakan metode marketing mix dengan melihat pada aspek (product, promotion, people, price, place, physical product, dan process). Aspek sangat berguna dalam penentuan strategi pemasaran yang tepat untuk bisnis. <br><br>
+
+                    <h5>Manajemen Produksi dan Distribusi</h5>
+                    Manajemen usaha bagi UMKM selanjutnya adalah manajemen produksi. Bagaimana Anda menata sebuah produksi dari bahan mentah menjadi suatu produk atau jasa yang memiliki nilai jual tinggi. Aspek produksi akan sangat berkaitan dengan proses produksi yang dilakukan. Manajemen produksi bukan hanya sekedar memantau proses produksi saja. Melainkan menyangkut dengan pengambilan keputusan dalam mencapai tujuan perusahaan. <br><br>
+
+                    Anda sebagai pemilik usaha harus mampu menciptakan produk atau jasa sesuai standar yang telah ditetapkan berdasarkan pada keinginan konsumen, sistem produksi efektif dan efisien, hingga pemilihan bahan baku yang tepat untuk bisnis. <br><br>
+
+                    <h5>Distribusi</h5>
+                    Setelah barang selesai di produksi, sebagai pebisnis harus memikirkan bagaimana barang atau jasa bisa terdistribusi kepada khalayak dengan tepat. Aktivitas produksi dapat dikatakan perpindahan tangan barang atau jasa dari produsen kepada konsumen. <br><br>
+
+                    Manajemen distribusi menjadi aspek yang cukup penting dalam bisnis. Apabila faktor produksi sudah berjalan namun menggabaikan distribusi dampaknya akan fatal terhadap barang dan jasa.Dalam pengertian yang luas, distribusi juga menyangkut tentang pergudangan, transportasi, persediaan, hingga penanganan pesanan. <br><br>
+
+                    <h5>Manajemen Keuangan</h5>
+                    Tak ketinggalan dalam bisnis, para pelaku usaha harus menjalankan manajemen keuangan dalam bisnis yang mereka miliki. Manajemen keuangan adalah proses pencatatan, perencanaan, penganggaran, hingga pengelolaan dana yang dimiliki dalam bisnis. <br><br>
+
+                    Manajemen keuangan jika diperhatikan cukup mudah untuk dilakukan, pada kenyataannya hal ini cukup sulit diterapkan oleh pebisnis dimanapun. Padahal manajemen keuangan yang baik mampu membantu menjaga arus kas dan memaksimalkan revenue perusahaan. Penerapan manajemen keuangan menjadi satu hal yang cukup penting untuk menggapai tujuan perusahaan. Terlebih keuangan menjadi hal yang cukup krusial dalam bisnis. <br><br>
+
+                    Jika Anda belum memiliki staff keuangan, Anda harus mampu menjaga anggaran, menghitung pajak, hingga meningkatkan kinerja keuangan usaha dan masih banyak lagi sendiri. Disini Anda dituntut untuk melakukan pembukuan. Agar pembukuan dilakukan dengan mudah, sebaiknya Anda menggunakan Accurate Online yang mampu melakukan manajemen keuangan sebagai penerapan manajemen usaha bagi UMKM. <br>
+                  </p>
+                  <p>Sumber : <a href="https://abckotaraya.id/manajemen-usaha-bagi-umkm-yang-perlu-dilakukan/" class="text-primary">https://abckotaraya.id/manajemen-usaha-bagi-umkm-yang-perlu-dilakukan/</a></p>
+                  <hr>
+                  <h5>Edukasi Lainnya</h5>
+                  <a href="#" class="card-konten-edukasi">
+                    <div class="rekomendasi-wisata mt-4">
+                      <div class="row">
+                        <img src="assets/img/edukasi-video.png" alt="" class="col-lg-4 col-md-4 col-12 image image-fluid">
+                        <div class="p-4 col-lg-8 col-md-8 col-12">
+                          <small class="text-muted">
+                            <small class="badge badge-info">Edukasi UMKM</small> <div class="bullet"></div> Diunggah pada <b class="text-primary">15 Juli 2021</b>
+                          </small>
+                          <h5 class="mt-3">10 Contoh Iklan Promosi Produk Yang unik dan Kreatif!</h5>
+                          <p class="mt-3">Video Edukasi Contoh Iklan Produk</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card-konten-edukasi">
+                    <div class="rekomendasi-wisata mt-4">
+                      <div class="row">
+                        <img src="https://d39otahjdwbcpl.cloudfront.net/wp-content/uploads/2018/01/stock-3170020_1920.jpg.webp" alt="" class="col-lg-4 col-md-4 col-12 image image-fluid">
+                        <div class="p-4 col-lg-8 col-md-8 col-12">
+                          <small class="text-muted">
+                            <small class="badge badge-info">Edukasi UMKM</small> <div class="bullet"></div> Diunggah pada <b class="text-primary">15 Juli 2021</b>
+                          </small>
+                          <h5 class="mt-3">5 Cara Meningkatkan Bisnis UKM Menjadi Lebih Berkembang</h5>
+                          <p class="mt-3">Belajar meningkatkan Bisnis</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card-konten-edukasi">
+                    <div class="rekomendasi-wisata mt-4">
+                      <div class="row">
+                        <img src="assets/img/yt-1.png" alt="" class="col-lg-4 col-md-4 col-12 image image-fluid rounded">
+                        <div class="p-4 col-lg-8 col-md-8 col-12">
+                          <small class="text-muted">
+                            <small class="badge badge-info">Edukasi UMKM</small> <div class="bullet"></div> Diunggah pada <b class="text-primary">15 Juli 2021</b>
+                          </small>
+                          <h5 class="mt-3">Startegi Marketing Untuk Bisnis Cemilan</h5>
+                          <p class="mt-3">Peningkatan pengembangan bisnis</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="assets/img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/jquery.selectric.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
