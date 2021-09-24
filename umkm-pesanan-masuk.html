@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/mascot-primary.png" type="image/x-icon">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- sidebar -->
+  <nav class="navbar navbar-dashboard navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/white.png" alt="">
+      </a>
+      <div class="d-flex">
+
+        <!-- dropdown chat -->
+        <div class="dropdown dropdown-chat mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-chat"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+            <div class="dropdown-header">Pesan Masuk (1)</div>
+            <div class="dropdown-list-content dropdown-list-message">
+              <a href="#" class="dropdown-item d-flex">
+                <div class="dropdown-item-avatar mr-2">
+                  <img alt="image" width="35px" src="assets/img/avatar/foto.png" class="rounded-circle">
+                </div>
+                <div class="dropdown-item-desc">
+                  <b>Reza Febriansyah</b>
+                  <p>Yang bumbu rica rica nya sedang kosong</p>
+                  <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown-footer text-center mt-3">
+              <a href="umkm-chat.html" class="text-primary">Lihat Semua <i class="bx bx-fw bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown chat -->
+        
+        <!-- dropdown notifikasi -->
+        <div class="dropdown dropdown-notif mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-bell"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+            <div class="dropdown-header">Notifikasi (1)
+              <div class="float-right">
+                <a class="text-primary" href="#">Tandai Semua Terbaca</a>
+              </div>
+            </div>
+            <div class="dropdown-list-content">
+              <a href="javascript:void(0);" class="dropdown-item d-flex">
+                <div class="dropdown-item-icon text-success">
+                  <i class="bx bx-fw bx-check"></i>
+                </div>
+                <div class="dropdown-item-desc">
+                  Akun UMKM berhasil dibuat !
+                  <div class="time text-muted">
+                    <small>2 menit yang lalu</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown notifikasi -->
+        
+        <!-- dropdown profil -->
+        <div class="dropdown">
+          <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/warung-ndeso.png" width="30px" class="image rounded rounded-circle" alt="">
+          </a>
+          
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item mb-2" href="umkm-akun-profil.html">
+              <i class="bx bx-fw bx-store"></i> Profil UMKM
+            </a>
+            <a class="dropdown-item text-danger" type="button" id="swal-logout">
+              <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+            </a>
+          </div>
+
+        </div>
+        <!-- end dropdown profil -->
+
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a class="nav-link btn btn-primary text-white" href="pelanggan-home.html">
+                <i class='bx bx-fw bx-left-arrow-alt'></i> Ke Akun Utama
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-home.html">
+                <i class='bx bx-fw bx-home-circle'></i>
+                Dashboard UMKM
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-kelola-produk.html">
+                <i class='bx bx-fw bx-file'></i>
+                Kelola Produk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link active" href="umkm-pesanan-masuk.html">
+                <i class='bx bx-fw bx-box'></i>
+                Pesanan Masuk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-cek-rekening.html">
+                <i class='bx bx-fw bx-credit-card'></i>
+                Cek Rekening
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-pusat-edukasi.html">
+                <i class='bx bx-fw bx-book'></i>
+                Pusat Edukasi
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-bantuan.html">
+                <i class='bx bx-fw bx-headphone'></i>
+                Bantuan
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="container page-umkm col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <section class="section mt-4">
+          
+          <div class="section-header">
+            <h3>Pesanan Masuk</h3>
+          </div>
+
+          <div class="section-body">
+
+            <div class="card mt-4">
+              <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Semua Pesanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Pesanan Baru <div class="bullet text-warning"></div></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Dalam Pengiriman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="selesai-tab2" data-toggle="tab" href="#selesai2" role="tab" aria-controls="selesai" aria-selected="false">Pesanan Selesai</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="batal-tab2" data-toggle="tab" href="#batal2" role="tab" aria-controls="batal" aria-selected="false">Pesanan Dibatalkan</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content tab-bordered" id="myTab3Content">
+
+                  <!-- SEMUA PESANAN -->
+                  <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                    
+                  </div>
+                  <!-- END SEMUA PESANAN -->
+
+                  <!-- PESANAN BARU -->
+                  <div class="tab-pane fade show active p-5" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                    <div class="pesanan-baru">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Waroeng nDesso-Nasi tumpeng Ingkung</strong>
+                          <p>1x <b class="text-warning">Rp. 200.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Sesuai pesanan ya kak"</p>
+                          <div class="pengiriman mt-3 row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <img src="https://seremonia.id/wp-content/uploads/2020/06/logo-gojek-baru.png" alt="" width="100px" height="50px">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <strong>GOJEK</strong>
+                              <p>25 Menit</p>
+                            </div>
+                          </div>
+                          <p class="text-muted"> <i class="bx bx-fw bxs-time"></i> Menunggu pelunasan pembayaran</p>
+                          <hr>
+                          <p class="mb-0">Tanggal Pemesanan : <b>22 Juli 2021</b></p>
+                          <p class="mb-0">Waktu Pemesanan : <b>15:21:32</b></p>
+                          <p class="mb-0">Nama Pemesan : <b>Kusnadi</b></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pesanan-baru mt-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Atasan Batik Wanita-Hitam Merah</strong>
+                          <p>1x <b class="text-warning">Rp.150.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Prioritaskan yang ukuran XL dulu ya kak, kalo misal gaada ukuran L juga gapapa"</p>
+                          <div class="pengiriman mt-3 row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <img src="https://seremonia.id/wp-content/uploads/2020/06/logo-gojek-baru.png" alt="" width="100px" height="50px">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <strong>GOJEK</strong>
+                              <p>25 Menit</p>
+                            </div>
+                          </div>
+                          <p class="mb-5">Telah melunasi pembayaran <i class="bx bx-fw bx-check text-primary" aria-hidden="true"></i></p>
+                          <hr>
+                          <p class="mb-0">Tanggal Pemesanan : <b>22 Juli 2021</b></p>
+                          <p class="mb-0">Waktu Pemesanan : <b>15:21:32</b></p>
+                          <p class="mb-0">Nama Pemesan : <b>Kusnadi</b></p>
+                          <button class="btn btn-primary mt-3">
+                            <i class="bx bx-fw bx-check" aria-hidden="true"></i> Proses Pesanan
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END PESANAN BARU -->
+
+                  <!-- PROSES PENGIRIMAN -->
+                  <div class="tab-pane fade p-5" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                    <div class="pesanan-baru">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Waroeng nDesso-Nasi Tumpeng Ingkung</strong>
+                          <p>1x <b class="text-warning">Rp. 200.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Sesuai pesanan ya kak"</p>
+                          <div class="pengiriman mt-3 row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <img src="https://seremonia.id/wp-content/uploads/2020/06/logo-gojek-baru.png" alt="" width="100px" height="50px">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <strong>GOJEK</strong>
+                              <p>25 Menit</p>
+                            </div>
+                          </div>
+                          <p class="mb-5">Telah melunasi pembayaran <i class="fa fa-check-circle text-success" aria-hidden="true"></i></p>
+                          <p>status: <small class="badge badge-sm badge-warning">Proses Pengiriman</small></p>
+                          <hr>
+                          <p class="mb-0">Tanggal Pemesanan : <b>22 Juli 2021</b></p>
+                          <p class="mb-0">Waktu Pemesanan : <b>15:21:32</b></p>
+                          <p class="mb-0">Nama Pemesan : <b>Kusnadi</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END PROSES PENGIRIMAN -->
+
+                  <!-- PESANAN SELESAI -->
+                  <div class="tab-pane fade p-5" id="selesai2" role="tabpanel" aria-labelledby="selesai-tab2">
+                    <div class="pesanan-baru">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Waroeng nDesso-Nasi tumpeng Ingkung</strong>
+                          <p>1x <b class="text-warning">Rp. 200.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "Sesuai pesanan ya kak"</p>
+                          <div class="pengiriman mt-3 row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <img src="https://seremonia.id/wp-content/uploads/2020/06/logo-gojek-baru.png" alt="" width="100px" height="50px">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <strong>GOJEK</strong>
+                              <p>25 Menit</p>
+                            </div>
+                          </div>
+                          <p class="mb-3">Telah melunasi pembayaran <i class="fa fa-check-circle text-success" aria-hidden="true"></i></p>
+                          <p>status: <small class="badge badge-sm badge-info">Berhasil Diterima</small></p>
+                          <p class="mb-0">Tanggal Pemesanan : <b>22 Juli 2021</b></p>
+                          <p class="mb-0">Waktu Pemesanan : <b>15:21:32</b></p>
+                          <p class="mb-0">Nama Pemesan : <b>Kusnadi</b></p>
+                          <hr>
+                          <p>Ulasan produk ini :</p>
+                          <div class="ulasan-produk-penjualan bg-light rounded p-3">
+                            Pesanan sudah sampai, menu sudah sesuai, terimakasih Waroeng nDesso
+                          </div>
+                          <div class="d-flex mt-3">
+                            <p>Penilaian:</p>
+                            <div class="text-warning ml-3">
+                              <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                              <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                              <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                              <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                              <i class="bx bx-fw bxs-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="form-group">
+                            <label for="">Balasan Ulasan:</label>
+                            <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            <button class="btn btn-primary mt-3 float-right">Kirim Balasan</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END PESANAN SELESAI -->
+
+                  <!-- DIBATALKAN -->
+                  <div class="tab-pane fade p-5" id="batal2" role="tabpanel" aria-labelledby="batal-tab2">
+                    <div class="pesanan-baru">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-12">
+                          <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-12">
+                          <strong>Waroeng nDesso-Nasi Tumpeng Ingkung</strong>
+                          <p>1x <b class="text-warning">Rp. 200.000</b></p>
+                          <p class="text-muted">Catatan Pembeli:<br> "yang komplit ya kak"</p>
+                          <div class="pengiriman mt-3 row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <img src="https://seremonia.id/wp-content/uploads/2020/06/logo-gojek-baru.png" alt="" width="100px" height="50px">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <strong>GOJEK</strong>
+                              <p>25 Menit</p>
+                            </div>
+                          </div>
+                          <p class="text-muted"> <i class="fas fa-clock"></i> Menunggu pelunasan pembayaran</p>
+                          <p>status: <small class="badge badge-sm badge-danger">Pesanan Dibatalkan</small></p>
+                          <p>Alasan : Saya salah memesan</p>
+                          <hr>
+                          <p class="mb-0">Tanggal Pemesanan : <b>22 Juli 2021</b></p>
+                          <p class="mb-0">Waktu Pemesanan : <b>15:21:32</b></p>
+                          <p class="mb-0">Nama Pemesan : <b>Kusnadi</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END DIBATALKAN -->
+                </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="assets/img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/jquery.selectric.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

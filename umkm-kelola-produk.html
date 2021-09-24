@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="assets/img/mascot-primary.png" type="image/x-icon">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="//cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css">
@@ -163,311 +164,306 @@
           </div>
 
           <div class="section-body">
+            <div class="card mt-4">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Daftar Produk</h5>
+                <a href="umkm-tambah-produk.html" class="btn btn-lg btn-primary">
+                  <i class="bx bx-fw bx-plus" aria-hidden="true"></i> Tambah Produk
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hovered table-striped" id="table-2">
+                    <thead>
+                      <tr>
+                        <th class="text-center">
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
+                              class="custom-control-input" id="checkbox-all">
+                            <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </th>
+                        <th>Info Produk</th>
+                        <th>Kategori</th>
+                        <th>Harga</th>
+                        <th>Stok</th>
+                        <th>Aktif</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                              id="checkbox-1">
+                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </td>
+                        <td class="d-flex">
+                          <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt=""
+                            class="rounded mr-3" width="70px" height="70px">
+                          <div>
+                            <p>Waroeng nDesso-Nasi Tumpeng Ingkung</p>
+                          </div>
+                        </td>
+                        <td>
+                          Makanan
+                        </td>
+                        <td>
+                          Rp.200.000
+                        </td>
+                        <td>7</td>
+                        <td>
+                          <div class="form-group">
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" checked class="custom-control-input" id="switch1">
+                              <label class="custom-control-label" for="switch1"></label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Pilihan
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="umkm-detail-produk.html">Detail Produk</a>
+                              <a class="dropdown-item" href="umkm-edit-produk.html">Edit Produk</a>
+                              <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h5>Daftar Produk</h5>
-                    <a href="tambah-produk.html" class="btn btn-lg btn-primary">
-                      <i class="bx bx-fw bx-plus" aria-hidden="true"></i> Tambah Produk
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-hovered table-striped" id="table-2">
-                        <thead>
-                          <tr>
-                            <th class="text-center">
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                                  class="custom-control-input" id="checkbox-all">
-                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </th>
-                            <th>Info Produk</th>
-                            <th>Kategori</th>
-                            <th>Harga</th>
-                            <th>Stok</th>
-                            <th>Aktif</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Nasi Tumpeng Ingkung</strong>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.200.000
-                            </td>
-                            <td>7</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                              id="checkbox-1">
+                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </td>
+                        <td class="d-flex">
+                          <img src="assets/img/produk/wd-2.png" alt=""
+                            class="rounded mr-3" width="70px" height="70px">
+                          <div>
+                            <p>Waroeng nDesso-Paket Hantaran Ingkung</p>
+                          </div>
+                        </td>
+                        <td>
+                          Makanan
+                        </td>
+                        <td>
+                          Rp.250.000
+                        </td>
+                        <td>7</td>
+                        <td>
+                          <div class="form-group">
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" checked class="custom-control-input" id="switch2">
+                              <label class="custom-control-label" for="switch2"></label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Pilihan
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="umkm-detail-produk.html">Detail Produk</a>
+                              <a class="dropdown-item" href="umkm-edit-produk.html">Edit Produk</a>
+                              <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="assets/img/produk/wd-2.png" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Paket Hantaran Ingkung</strong>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.250.000
-                            </td>
-                            <td>7</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                              id="checkbox-1">
+                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </td>
+                        <td class="d-flex">
+                          <img src="assets/img/produk/wd-3.png" alt=""
+                            class="rounded mr-3" width="70px" height="70px">
+                          <div>
+                            <p>Waroeng nDesso-Nasi ingkung Besekan</p>
+                          </div>
+                        </td>
+                        <td>
+                          Makanan
+                        </td>
+                        <td>
+                          Rp.25.000
+                        </td>
+                        <td>15</td>
+                        <td>
+                          <div class="form-group">
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" checked class="custom-control-input" id="switch3">
+                              <label class="custom-control-label" for="switch3"></label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Pilihan
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="umkm-detail-produk.html">Detail Produk</a>
+                              <a class="dropdown-item" href="umkm-edit-produk.html">Edit Produk</a>
+                              <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="assets/img/produk/wd-3.png" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Nasi ingkung Besekan</strong>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.25.000
-                            </td>
-                            <td>15</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                              id="checkbox-1">
+                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </td>
+                        <td class="d-flex">
+                          <img src="assets/img/produk/wd-4.png" alt=""
+                            class="rounded mr-3" width="70px" height="70px">
+                          <div>
+                            <p>Waroeng nDesso-Gudeg Manggar Kandilan</p>
+                          </div>
+                        </td>
+                        <td>
+                          Makanan
+                        </td>
+                        <td>
+                          Rp.120.000
+                        </td>
+                        <td>20</td>
+                        <td>
+                          <div class="form-group">
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" checked class="custom-control-input" id="switch4">
+                              <label class="custom-control-label" for="switch4"></label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Pilihan
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="umkm-detail-produk.html">Detail Produk</a>
+                              <a class="dropdown-item" href="umkm-edit-produk.html">Edit Produk</a>
+                              <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="assets/img/produk/wd-4.png" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Gudeg Manggar Kandilan</strong>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.120.000
-                            </td>
-                            <td>20</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                              id="checkbox-1">
+                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </td>
+                        <td class="d-flex">
+                          <img src="assets/img/produk/wd-5.png" alt=""
+                            class="rounded mr-3" width="70px" height="70px">
+                          <div>
+                            <p>Waroeng nDesso-Gudeg Mbang Gedhang</p>
+                          </div>
+                        </td>
+                        <td>
+                          Makanan
+                        </td>
+                        <td>
+                          Rp.80.000
+                        </td>
+                        <td>15</td>
+                        <td>
+                          <div class="form-group">
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" checked class="custom-control-input" id="switch5">
+                              <label class="custom-control-label" for="switch5"></label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Pilihan
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="umkm-detail-produk.html">Detail Produk</a>
+                              <a class="dropdown-item" href="umkm-edit-produk.html">Edit Produk</a>
+                              <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="assets/img/produk/wd-5.png" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Gudeg Mbang Gedhang</strong>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.80.000
-                            </td>
-                            <td>15</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-checkbox custom-control">
+                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                              id="checkbox-1">
+                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                          </div>
+                        </td>
+                        <td class="d-flex">
+                          <img src="assets/img/produk/wd-6.png" alt=""
+                            class="rounded mr-3" width="70px" height="70px">
+                          <div>
+                            <p>Waroeng nDesso-Gudeg Manggar</p>
+                          </div>
+                        </td>
+                        <td>
+                          Makanan
+                        </td>
+                        <td>
+                          Rp.20.000
+                        </td>
+                        <td>15</td>
+                        <td>
+                          <div class="form-group">
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" checked class="custom-control-input" id="switch6">
+                              <label class="custom-control-label" for="switch6"></label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Pilihan
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="umkm-detail-produk.html">Detail Produk</a>
+                              <a class="dropdown-item" href="umkm-edit-produk.html">Edit Produk</a>
+                              <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-                          <tr>
-                            <td>
-                              <div class="custom-checkbox custom-control">
-                                <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                                  id="checkbox-1">
-                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                              </div>
-                            </td>
-                            <td class="d-flex">
-                              <img src="assets/img/produk/wd-6.png" alt=""
-                                class="rounded mr-3" width="70px" height="70px">
-                              <div>
-                                <strong>Waroeng nDesso-Gudeg Manggar</strong>
-                              </div>
-                            </td>
-                            <td>
-                              Makanan
-                            </td>
-                            <td>
-                              Rp.20.000
-                            </td>
-                            <td>15</td>
-                            <td>
-                              <div class="form-group">
-                                <label class="custom-switch mt-2">
-                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                  <span class="custom-switch-indicator"></span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                  aria-haspopup="true" aria-expanded="false">
-                                  Pilihan
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="detail-produk-umkm.html">Detail Produk</a>
-                                  <a class="dropdown-item" href="edit-produk.html">Edit Produk</a>
-                                  <a class="dropdown-item text-danger" href="#">Hapus Produk</a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

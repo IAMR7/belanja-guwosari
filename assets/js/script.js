@@ -120,6 +120,29 @@ $("#swal-proses-pembayaran").click(function() {
     });
 });
 
+// SWEET ALERT SIMPAN PRODUK
+$("#swal-tambah-produk").click(function() {
+  swal({
+      title: 'Apakah Produk Sudah Benar ?',
+      text: 'Setelah menekan "OK" produk akan langsung masuk kedalam daftar',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+      swal('Produk Berhasil Ditambahkan! Silahkan melihat kembali daftar produk', {
+        icon: 'success',
+      });
+      setTimeout(function(){ 
+        window.location.href = "umkm-kelola-produk.html";
+      }, 1500);
+      } else {
+      swal('Membatalkan menyimpan produk');
+      }
+    });
+});
+
 // SWEET ALERT DAFTAR UMKM
 $("#swal-daftar-umkm").click(function() {
     swal({
@@ -184,15 +207,18 @@ $("[data-checkboxes]").each(function() {
         }
       }
     });
-  });
+});
   
-  $("#table-1").dataTable({
-    "columnDefs": [
-      { "sortable": false, "targets": [2,3] }
-    ]
-  });
-  $("#table-2").dataTable({
-    "columnDefs": [
-      { "sortable": false, "targets": [0,2,3] }
-    ]
-  });
+$("#table-1").dataTable({
+  "columnDefs": [
+    { "sortable": false, "targets": [2,3] }
+  ]
+});
+
+$("#table-2").dataTable({
+  "columnDefs": [
+    { "sortable": false, "targets": [0,2,3] }
+  ]
+});
+
+  

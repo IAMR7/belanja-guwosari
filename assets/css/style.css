@@ -994,6 +994,13 @@ div.icon-widget {
   font-size: 50px;
 }
 
+/* PENJUALAN UMKM */
+div.pesanan-baru {
+  border: solid 1px rgb(232, 232, 232);
+  border-radius: 15px;
+  padding: 30px;
+}
+
 @media (min-width: 992px) {
   body.login-page {
     background-position-y: -200px;

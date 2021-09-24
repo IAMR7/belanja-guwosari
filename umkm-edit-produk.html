@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/mascot-primary.png" type="image/x-icon">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- sidebar -->
+  <nav class="navbar navbar-dashboard navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/white.png" alt="">
+      </a>
+      <div class="d-flex">
+
+        <!-- dropdown chat -->
+        <div class="dropdown dropdown-chat mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-chat"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+            <div class="dropdown-header">Pesan Masuk (1)</div>
+            <div class="dropdown-list-content dropdown-list-message">
+              <a href="#" class="dropdown-item d-flex">
+                <div class="dropdown-item-avatar mr-2">
+                  <img alt="image" width="35px" src="assets/img/avatar/foto.png" class="rounded-circle">
+                </div>
+                <div class="dropdown-item-desc">
+                  <b>Reza Febriansyah</b>
+                  <p>Yang bumbu rica rica nya sedang kosong</p>
+                  <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown-footer text-center mt-3">
+              <a href="umkm-chat.html" class="text-primary">Lihat Semua <i class="bx bx-fw bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown chat -->
+        
+        <!-- dropdown notifikasi -->
+        <div class="dropdown dropdown-notif mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-bell"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+            <div class="dropdown-header">Notifikasi (1)
+              <div class="float-right">
+                <a class="text-primary" href="#">Tandai Semua Terbaca</a>
+              </div>
+            </div>
+            <div class="dropdown-list-content">
+              <a href="javascript:void(0);" class="dropdown-item d-flex">
+                <div class="dropdown-item-icon text-primary">
+                  <i class="bx bx-fw bx-check"></i>
+                </div>
+                <div class="dropdown-item-desc">
+                  Akun UMKM berhasil dibuat !
+                  <div class="time text-muted">
+                    <small>2 menit yang lalu</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown notifikasi -->
+        
+        <!-- dropdown profil -->
+        <div class="dropdown">
+          <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/warung-ndeso.png" width="30px" class="image rounded rounded-circle" alt="">
+          </a>
+          
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item mb-2" href="umkm-akun-profil.html">
+              <i class="bx bx-fw bx-store"></i> Profil UMKM
+            </a>
+            <a class="dropdown-item text-danger" type="button" id="swal-logout">
+              <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+            </a>
+          </div>
+
+        </div>
+        <!-- end dropdown profil -->
+
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a class="nav-link btn btn-primary text-white" href="pelanggan-home.html">
+                <i class='bx bx-fw bx-left-arrow-alt'></i> Ke Akun Utama
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link active" href="umkm-home.html">
+                <i class='bx bx-fw bx-home-circle'></i>
+                Dashboard UMKM
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-kelola-produk.html">
+                <i class='bx bx-fw bx-file'></i>
+                Kelola Produk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-pesanan-masuk.html">
+                <i class='bx bx-fw bx-box'></i>
+                Pesanan Masuk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-cek-rekening.html">
+                <i class='bx bx-fw bx-credit-card'></i>
+                Cek Rekening
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-pusat-edukasi.html">
+                <i class='bx bx-fw bx-book'></i>
+                Pusat Edukasi
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="umkm-bantuan.html">
+                <i class='bx bx-fw bx-headphone'></i>
+                Bantuan
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="container page-umkm col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <section class="section mt-4">
+          <div class="section-header">
+            <h3>Tambah Produk</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="card mt-4">
+              <div class="card-body p-5">
+                <h5 class="mb-5">Unggah Produk</h5>
+                <div class="row">
+                  <div class="text-justify col-lg-4 col-md-4 col-12 mr-3">
+                    <h6>Foto Produk <small class="badge badge-sm badge-light">Wajib</small></h6>
+                    <p>
+                      Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px (Untuk gambar optimal gunakan ukuran minimum 700 x 700 px). <br><br>
+                      Pilih foto produk atau tarik dan letakkan hingga 4 foto sekaligus di sini.
+                    </p>
+                  </div>
+                  <div class="row col-lg-8 col-md-8 col-12">
+                    <div class="form-group upload-foto-produk col-lg-6 col-md-6 col-12">
+                      <div class="upload-gambar form-group">
+                        <input accept="image/*" type='file' id="imgInp"/>
+                        <img id="blah" width="100%" src="assets/img/produk/ingkung-waroeng-ndesso.png" class="mt-3 image rounded"/>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-body p-5">
+                <h5 class="mb-5">Identitas Produk</h5>
+                <div class="row mb-4">
+                  <div class="text-justify col-lg-4 col-md-4 col-12">
+                    <h6>Nama Produk <small class="badge badge-sm badge-light">Wajib</small></h6>
+                    <p>
+                      Nama min. 5 kata, terdiri dari jenis produk, merek, dan keterangan seperti warna, bahan, atau tipe.
+                    </p>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <input type="text"
+                        class="form-control" value="Waroeng nDesso-Nasi Tumpeng Ingkung">
+                      <small id="helpId" class="form-text text-muted">0/70</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kategori <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <select class="form-control select2">
+                        <option selected>Makanan</option>
+                        <option>Minuman</option>
+                        <option>Pakaian Pria</option>
+                        <option>Pakaian Wanita</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kondisi</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-4 col-12">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="customRadioInline1">Baru</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline2">Bekas</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Deskripsi <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="3">Ayam Ingkung merupakan kuliner khas Jawa yang berbahan dasar ayam yang dimasak secara utuh dengan berbagai jenis bumbu rempah. Ingkung berasal dari kata“manengkung” yang berarti berdoa kepada Tuhan dengan kesungguhan hati. Hidangan ini menjadi kultur dan wajib di setiap acara besar adat Jawa. Cita rasa ayam goreng yang tidak pedas dengan bumbu yang meresap sangat cocok khususnya yang memiliki anak-anak dirumah.</textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Kelengkapan</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="3">Kondisi: Baru
+                        Kondisi: Baru
+                        Berat: 1.500 Gram
+                        Kategori: Makanan
+
+                        Ayam goreng
+                        1 ekor +/- 1.5 kg
+                        Ayam merah, texture seperti ayam kampung Enak dan murah Sdh termasuk lalapan dan sambal</textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Catatan Produk</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id="" rows="3">CARA PENYAJIAN:
+                        - Sebaiknya dikonsumsi langsung saat paket makanan tiba.
+                        - Disimpan pada chiller, tahan 1- 2 hari.
+                        - Bisa hangatkan kembali menggunakan microwave selama 1-2 menit atau air fry selama 5-10 menit.</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-body p-5">
+                <h5 class="mb-5">Harga dan Potongan</h5>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Minimal Pemesanan</h6><br>
+                    <p>
+                      Masukkan jumlah minimum pemesanan yang harus dibeli untuk produk ini.
+                    </p>
+                  </div>
+                  <div class="col-lg-8 col-md-4 col-12">
+                    <div class="form-group">
+                      <input type="number" class="form-control" value="1">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Harga Satuan <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-light">
+                          <strong>Rp</strong>
+                        </div>
+                      </div>
+                      <input type="number" class="form-control currency" value="352,000">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Potongan Diskon</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-light">
+                          <strong>%</strong>
+                        </div>
+                      </div>
+                      <input type="number" class="form-control" value="10">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-body p-5">
+                <h5 class="mb-5">Pengelolaan Produk</h5>
+                <div class="row mb-5">
+                  <div class="text-justify col-lg-4 col-md-4 col-12">
+                    <h6>Status Produk</h6><br>
+                    <p>
+                      Jika status produk aktif, produk anda dapat dicari oleh calon pembeli.
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-around">
+                    <p>Tidak Aktif</p>
+                    <div class="form-group ml-2">
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switch1" checked>
+                        <label class="custom-control-label" for="switch1"></label>
+                      </div>
+                    </div>
+                    <p>Aktif</p>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <h6>Stok Tersedia <small class="badge badge-sm badge-light">Wajib</small></h6>
+                  </div>
+                  <div class="col-lg-8 col-md-4 col-12">
+                    <div class="form-group">
+                      <input type="number" class="form-control" value="20">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="text-justify col-lg-4 col-md-4 col-12">
+                    <h6>Pengiriman <small class="badge badge-sm badge-light">Wajib</small></h6><br>
+                    <p>
+                      Tandai atau ceklis beberapa pilihan pengiriman yang akan disediakan untuk produk ini.
+                    </p>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12">
+                    <div class="form-group">
+                      <div class="row gutters-sm">
+
+                        <div class="col-6 col-sm-4">
+                          <label class="imagecheck mb-4">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                            <figure class="imagecheck-figure">
+                              <img src="https://vectrostudio.com/wp-content/uploads/2020/01/JNE-Logo_vectrostudio.jpg" alt="}" width="100%" class="image rounded check-image">
+                            </figure>
+                          </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                          <label class="imagecheck mb-4">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                            <figure class="imagecheck-figure">
+                              <img src="https://assets-a1.kompasiana.com/items/album/2019/12/22/untitled-5dfe503b097f36297805be43.png" alt="}" width="100%" class="image rounded check-image">
+                            </figure>
+                          </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                          <label class="imagecheck mb-4">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                            <figure class="imagecheck-figure">
+                              <img src="https://3.bp.blogspot.com/-JgE5OIyHWzk/W_YcheR36ZI/AAAAAAAAQLM/nBKvNQKz7wwYYtZTBYzMZUAMyRO12PSjQCLcBGAs/s1600/Ninja%2BXpress.png" alt="}" width="100%" class="image rounded check-image">
+                            </figure>
+                          </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                          <label class="imagecheck mb-4">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                                id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                            <figure class="imagecheck-figure">
+                              <img src="https://upload.wikimedia.org/wikipedia/id/thumb/0/00/Pos-Indonesia.svg/1200px-Pos-Indonesia.svg.png" alt="}" width="100%" class="image rounded check-image">
+                            </figure>
+                          </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                          <label class="imagecheck mb-4">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" checked data-checkboxes="mygroup" class="custom-control-input"
+                                id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                            <figure class="imagecheck-figure">
+                              <img src="https://lh3.googleusercontent.com/proxy/EL6TXT5x3Hef-f1bEsyw_r9sX3yWZvT0cPrRjy-nLPEMwz17ydMRbd2mkjqgeVgpA53jmRx8-ESiIjFXu_4AsQcWuVtPYXrqSaq5jDd6Ho1dKbkoh1iW_rA" alt="}" width="100%" class="image rounded check-image">
+                            </figure>
+                          </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                          <label class="imagecheck mb-4">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" checked data-checkboxes="mygroup" class="custom-control-input"
+                                id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                            <figure class="imagecheck-figure">
+                              <img src="https://static.ussfeed.com/wp-content/uploads/2019/08/Untitled-6.png" alt="}" width="100%" class="image rounded check-image">
+                            </figure>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <button type="button" id="swal-tambah-produk" class="btn btn-primary mr-3">
+                <i class="bx bx-fw bx-save"></i> Simpan
+              </button>
+              <a href="umkm-kelola-produk.html" class="btn btn-danger">
+                <i class="bx bx-fw bx-x"></i> Batalkan</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="assets/img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/jquery.selectric.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
