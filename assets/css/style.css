@@ -986,6 +986,14 @@ nav#sidebarMenu li a {
   color: #343a40;
 }
 
+nav.navbar-dashboard a.navbar-brand img {
+  width: 130px;
+}
+
+div.icon-widget {
+  font-size: 50px;
+}
+
 @media (min-width: 992px) {
   body.login-page {
     background-position-y: -200px;
@@ -1040,6 +1048,10 @@ nav#sidebarMenu li a {
 
   div.header-profil-toko div.col-lg-6.col-md-6.col-12.d-flex:nth-child(2) {
     margin-top: 0;
+  }
+
+  nav.navbar-dashboard a.navbar-brand img {
+    width: 50%;
   }
 
 }
