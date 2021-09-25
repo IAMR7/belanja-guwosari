@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/mascot-primary.png" type="image/x-icon">
+  <title>Belanja Guwosari - Website Jual Beli Online Produk Khas Desa Guwosari</title>
+</head>
+
+<body>
+
+  <!-- sidebar -->
+  <nav class="navbar navbar-dashboard navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/white.png" alt="">
+      </a>
+      <div class="d-flex">
+
+        <!-- dropdown chat -->
+        <div class="dropdown dropdown-chat mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuCh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-chat"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuCh">
+            <div class="dropdown-header">Pesan Masuk (1)</div>
+            <div class="dropdown-list-content dropdown-list-message">
+              <a href="#" class="dropdown-item d-flex">
+                <div class="dropdown-item-avatar mr-2">
+                  <img alt="image" width="35px" src="assets/img/warung-ndeso.png" class="rounded-circle">
+                </div>
+                <div class="dropdown-item-desc">
+                  <b>Waroeng nDesso <i class="bx bx-fw bxs-badge-check text-info"></i></b>
+                  <p>Halo Admin, saya ada kendala dalam penjualan</p>
+                  <div class="time"><small class="text-muted">5 menit yang lalu</small></div>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown-footer text-center mt-3">
+              <a href="admin-chat.html" class="text-primary">Lihat Semua <i class="bx bx-fw bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown chat -->
+        
+        <!-- dropdown notifikasi -->
+        <div class="dropdown dropdown-notif mt-1">
+          <a class="keranjang text-white dropdown-toggle" type="button" id="dropdownMenuNotif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-fw bx-bell"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuNotif">
+            <div class="dropdown-header">Notifikasi (1)
+              <div class="float-right">
+                <a class="text-primary" href="#">Tandai Semua Terbaca</a>
+              </div>
+            </div>
+            <div class="dropdown-list-content">
+              <a href="javascript:void(0);" class="dropdown-item d-flex">
+                <div class="dropdown-item-icon text-primary">
+                  <i class="bx bx-fw bx-check"></i>
+                </div>
+                <div class="dropdown-item-desc">
+                  Kusnadi telah melunasi pembayaran
+                  <div class="time text-muted">
+                    <small>2 menit yang lalu</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown notifikasi -->
+        
+        <!-- dropdown profil -->
+        <div class="dropdown">
+          <a class="profil text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/avatar/admin.png" width="30px" class="image rounded rounded-circle" alt="">
+          </a>
+          
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item mb-2" href="umkm-akun-profil.html">
+              <i class="bx bx-fw bx-user-circle"></i> Profil Admin
+            </a>
+            <a class="dropdown-item text-danger" type="button" id="swal-logout-admin">
+              <i class="bx bx-fw bx-log-out text-danger"></i> Logout
+            </a>
+          </div>
+
+        </div>
+        <!-- end dropdown profil -->
+
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bx bx-fw bx-menu text-white"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a class="nav-link active" href="admin-dashboard.html">
+                <i class='bx bx-fw bx-home-circle'></i>
+                Dashboard Admin
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="admin-data-pengguna.html">
+                <i class='bx bx-fw bx-group'></i>
+                Data Pengguna
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="admin-artikel.html">
+                <i class='bx bx-fw bx-news'></i>
+                Artikel
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="admin-pesanan-masuk.html">
+                <i class='bx bx-fw bx-task'></i>
+                Pesanan Masuk
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a class="nav-link" href="admin-cek-rekening.html">
+                <i class='bx bx-fw bx-credit-card'></i>
+                cek-rekening
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="container page-umkm col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <section class="section mt-4">
+          <div class="section-header mb-4">
+            <h3>Dashboard Admin</h3>
+          </div>
+          <div class="section-body">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="head-data d-flex justify-content-between">
+                      <h6>Data User</h6>
+                      <a href="admin-data-pengguna.html" class="btn btn-sm btn-primary">
+                        Lihat Semua
+                      </a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bx-store text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">User UMKM</p>
+                            <h5>35</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bx-user text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">User Umum</p>
+                            <h5>220</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bx-user-circle text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">User Admin</p>
+                            <h5>4</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bx-group text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">Total User</p>
+                            <h5>255</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="head-data d-flex justify-content-between">
+                      <h6>Keuntungan : <b class="text-warning">Rp.72.522.000</b></h6>
+                      <a href="admin-cek-rekening.html" class="btn btn-sm btn-primary">
+                        Detail
+                      </a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bxs-up-arrow text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">Harian</p>
+                            <h5>2,345</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <div class="d-flex">
+                          <div class="icon-rugi p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bxs-down-arrow text-danger" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">Mingguan</p>
+                            <h5>5,466</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bxs-up-arrow text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-untung">
+                            <p class="mb-0">Bulanan</p>
+                            <h5>23,921</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="d-flex">
+                          <div class="icon-untung p-3 rounded text-center mr-2">
+                            <i class="bx bx-fw bx-minus text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="text-icon-info">
+                            <p class="mb-0">Tahunan</p>
+                            <h5>72,522</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-7 col-md-7 col-12">
+                <div class="card">
+                  <div class="card-header bg-light d-flex justify-content-between">
+                    <h6>Postingan Dibuat</h6>
+                    <a href="#" class="btn btn-sm btn-primary">Lihat Semua</a>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="table-responsive">
+                      <table class="table table-striped mb-0">
+                        <thead>
+                          <tr>
+                            <th>Judul Artikel</th>
+                            <th>Penulis</th>
+                            <th>Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              Belajar sambil bermain di ...
+                            </td>
+                            <td>
+                              <a href="#" class="font-weight-600 text-primary">
+                                <img src="assets/img/avatar/admin.png" alt="avatar" width="30" class="rounded-circle mr-1"> Admin
+                              </a>
+                            </td>
+                            <td>
+                              <a href="admin-edit-artikel.html" class="btn btn-sm btn-primary">
+                                <i class="bx bx-fw bx-edit"></i>
+                              </a>
+                              <button class="btn btn-sm btn-danger" id="swal-hapus-artikel">
+                                <i class="bx bx-fw bx-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Belajar sambil bermain di ...
+                            </td>
+                            <td>
+                              <a href="#" class="font-weight-600 text-primary">
+                                <img src="assets/img/avatar/admin.png" alt="avatar" width="30" class="rounded-circle mr-1"> Admin
+                              </a>
+                            </td>
+                            <td>
+                              <a href="admin-edit-artikel.html" class="btn btn-sm btn-primary">
+                                <i class="bx bx-fw bx-edit"></i>
+                              </a>
+                              <button class="btn btn-sm btn-danger" id="swal-hapus-artikel">
+                                <i class="bx bx-fw bx-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5 col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Top 3 UMKM : Agustus 2021</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col text-center">
+                        <img src="assets/img/warung-ndeso.png" alt="" class="image-fluid rounded" width="50px">
+                        <div class="mt-2 font-weight-bold">Waroeng nD...</div>
+                        <div class="text-muted text-small"><span class="text-primary">
+                          <i class="bx bx-fw bxs-up-arrow"></i>
+                        </span> 78%</div>
+                      </div>
+                      <div class="col text-center">
+                        <img src="assets/img/warung-ndeso.png" alt="" class="image-fluid rounded" width="50px">
+                        <div class="mt-2 font-weight-bold">Ingkung Kuali</div>
+                        <div class="text-muted text-small"><span class="text-primary">
+                          <i class="bx bx-fw bxs-up-arrow"></i>
+                        </span> 48%</div>
+                      </div>
+                      <div class="col text-center">
+                        <img src="assets/img/warung-ndeso.png" alt="" class="image-fluid rounded" width="50px">
+                        <div class="mt-2 font-weight-bold">Ingkung Sor...</div>
+                        <div class="text-muted text-small"><span class="text-primary">
+                          <i class="bx bx-fw bxs-up-arrow"></i>
+                        </span> 30%</div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- footer -->
+  <footer class="mt-5 py-5 text-white bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="assets/img/white.png" width="200px" alt="" class="mb-3">
+          <small class="d-block mb-3 text-white">&copy; Copyright Guwosari 2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu Pintasan</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Tentang Belanja Guwosari</a></li>
+            <li><a class="text-white" href="#">Info Wisata Desa</a></li>
+            <li><a class="text-white" href="#">Produk Unggulan</a></li>
+            <li><a class="text-white" href="#">Halaman UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Produk Belanja Guwosari</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Ingkung Areh</a></li>
+            <li><a class="text-white" href="#">Nasi Tumpeng Ingkung</a></li>
+            <li><a class="text-white" href="#">Paket Hantaran Ingkung</a></li>
+            <li><a class="text-white" href="#">Ingkung Rica-rica</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h6>Menu UMKM</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#">Pusat Edukasi</a></li>
+            <li><a class="text-white" href="#">Daftar Mitra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/jquery.selectric.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1001,6 +1001,50 @@ div.pesanan-baru {
   padding: 30px;
 }
 
+/* LOGIN ADMIN */
+.login-admin div.row{
+  background-color: white;
+  width: 80%;
+  margin-top: 60px;
+}
+
+div.bg-login-admin {
+  background: url("https://cdn-2.tstatic.net/jogja/foto/bank/images/lurah-guwosari-pajangan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+a.btn-login-admin {
+  width: 100%;
+}
+
+/* DASHBOARD ADMIN */
+div.icon-untung {
+  background-color: #38c59f6b;
+}
+
+div.icon-untung i {
+  font-size: 24px;
+}
+
+div.icon-rugi {
+  background-color: #fc544b6e;
+}
+
+/* EDIT DATA ADMIN */
+div.image-preview.foto-edit-data-admin {
+  background-image: url("../img/avatar/admin.png");
+  background-size: cover;
+}
+
+/* EDIT ARTIKEL ADMIN */
+div.image-preview.sampul-artikel {
+  background-image: url("https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_400,h_260/Blog_Cover_ID_-_Tempat_Wisata_di_Semarang_hrimmu.webp");
+  background-size: cover;
+}
+
 @media (min-width: 992px) {
   body.login-page {
     background-position-y: -200px;
@@ -1059,6 +1103,26 @@ div.pesanan-baru {
 
   nav.navbar-dashboard a.navbar-brand img {
     width: 50%;
+  }
+
+  img.ilus-chat-admin {
+    width: 35%;
+  }
+
+  div.rekomendasi-wisata {
+    width: 80%;
+  }
+
+  div.rekomendasi-wisata img {
+    width: 300px;
+  }
+
+  .login-admin div.row{
+    width: 50%;
+  }
+
+  div.bg-login-admin {
+    height: 100%;
   }
 
 }
