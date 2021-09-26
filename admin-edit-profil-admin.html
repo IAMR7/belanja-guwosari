@@ -109,13 +109,13 @@
         <div class="sidebar-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item mb-3">
-              <a class="nav-link" href="admin-dashboard.html">
+              <a class="nav-link active" href="admin-dashboard.html">
                 <i class='bx bx-fw bx-home-circle'></i>
                 Dashboard Admin
               </a>
             </li>
             <li class="nav-item mb-3">
-              <a class="nav-link active" href="admin-data-pengguna.html">
+              <a class="nav-link" href="admin-data-pengguna.html">
                 <i class='bx bx-fw bx-group'></i>
                 Data Pengguna
               </a>
@@ -145,143 +145,101 @@
       <main role="main" class="container page-umkm col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <section class="section mt-4">
           <div class="section-header">
-            <h3>Detail Data Pengguna</h3>
+            <h3>Edit Profil Admin</h3>
           </div>
           <div class="section-body mt-4">
             <div class="row">
               <div class="col-md-4 col-12">
                 <div class="card">
                   <div class="card-body container">
-                    <img src="assets/img/avatar/foto.png" alt="" class="image" width="100%">
+                    <div class="form-group d-flex justify-content-center">
+                      <div class="upload-gambar form-group">
+                        <img id="blah" width="100%" src="assets/img/avatar/admin.png" class="mb-3 image rounded"/>
+                        <input accept="image/*" type='file' id="imgInp"/>
+                      </div>
+                    </div>
+                    <p class="text-justify text-muted">
+                      Besar file: maksimum 10.000.000 bytes (10 Megabytes). Ekstensi file yang diperbolehkan: .JPG .JPEG
+                      .PNG
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-md-8 col-12">
-                <div class="card mb-4">
+                <div class="card">
                   <div class="card-body container">
                     <div class="data-diri">
                       <h5 class="mb-4">Informasi Data Diri</h5>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Nama Lengkap</p>
-                        <p>Reza Febriansyah</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="Admin Utama">
+                        </div>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">NIK</p>
+                        <div class="form-group">
+                          <input type="number" class="form-control" value="3182150605200000">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Tanggal Lahir</p>
-                        <p>7 Februari 2000</p>
+                        <div class="form-group">
+                          <input type="date" class="form-control" value="1994-01-02">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Jenis Kelamin</p>
-                        <p>Laki-laki</p>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="" checked="checked">
+                          <label class="custom-control-label" for="customRadioInline1">Laki-laki</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2">Perempuan </label>
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Alamat Utama</p>
-                        <p>Jl Gang Migunani, Tamantirto, Kasihan, Bantul D I Yogyakarta, Indonesia<p>
+                        <p class="text-dark mr-4">Alamat</p>
+                        <div class="form-group">
+                          <textarea class="form-control" name="" id="" rows="3">Jl Tanjung Pura No 21 Rt 10 Rw 05 Pegadungan Kalideres Jakarta Barat</textarea>
+                        </div>
                       </div>
                     </div>
                     <hr>
                     <div class="info-akun">
-                      <h5 class="mb-4">Informasi Akun</h5>
+                      <h5 class="mb-4">Email, Telepon dan Role</h5>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Email</p>
-                        <p>reza.febri72@gmail.com</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="adminutama@guwosari.com">
+                        </div>
                       </div>
                       <div class="d-flex text-justify">
                         <p class="text-dark mr-4">Nomor Telepon</p>
-                        <p>08978443076</p>
+                        <div class="form-group">
+                          <input type="text" class="form-control" value="082143336575">
+                        </div>
+                      </div>
+                      <div class="d-flex text-justify">
+                        <p class="text-dark mr-4">Role</p>
+                        <p class="text-muted">Admin</p>
                       </div>
                     </div>
                     <hr>
-                    <div class="rekening-akun">
-                      <h5 class="mb-4">Informasi Rekening Akun</h5>
+                    <div class="password-admin">
+                      <h5 class="mb-4">Password Akun Admin</h5>
                       <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Bank</p>
-                        <p>BRI</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Rekening</p>
-                        <p>327101041713533</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Atas Nama</p>
-                        <p>REZA FEBRIANSYAH</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body container">
-                    <div class="data-diri">
-                      <h5 class="mb-4">Informasi Utama UMKM</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Pemilik Usaha</p>
-                        <p>Yudi Susanto</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">NIK Pemilik Usaha</p>
-                        <p>3402073112810003</p>
-                      </div>
-                      <div class="d-flex text-justify mb-0">
-                        <p class="text-dark mr-4 mb-0">Nama Usaha/Toko</p>
-                        <p class="mb-0">Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></p>
-                      </div>
-                      <div class="custom-checkbox custom-control">
-                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                          id="checkbox-1">
-                        <label for="checkbox-1" class="custom-control-label">
-                          <small class="text-muted">Verifikasi UMKM ini</small>
-                        </label>
-                      </div>
-                      <div class="d-flex text-justify mt-3">
-                        <p class="text-dark mr-4">Alamat Usaha/Toko</p>
-                        <p>Karangber 001 Guwosari Pajangan Bantul DIY 55751</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Telepon Usaha/Toko</p>
-                        <p>085100452012</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Email Usaha/Toko</p>
-                        <p>ingkungjawa@gmail.com</p>
+                        <p class="text-dark mr-4">Password</p>
+                        <p>************ <a href="ubah-password.html" class="text-primary ml-3">Ganti Password ?</a></p>
                       </div>
                     </div>
                     <hr>
-                    <div class="info-akun">
-                      <h5 class="mb-4">Informasi Umum</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Jadwal Toko Buka</p>
-                        <p> 08.30 - 20.00 WIB (Buka Setiap Hari)</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Instagram</p>
-                        <p>@ingkungjawa</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Facebook</p>
-                        <p>ingkungjawa waroeng ndesso</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="rekening-akun">
-                      <h5 class="mb-4">Informasi Rekening Usaha</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Bank</p>
-                        <p>BRI</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Rekening</p>
-                        <p>0236 01 051665507</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Atas Nama</p>
-                        <p>YUDI SUSANTO</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <a href="admin-data-pengguna.html" class="btn btn-lg btn-primary">
-                      <i class="bx bx-fw bx-left-arrow-alt" aria-hidden="true"></i> Kembali
-                    </a>
-                    <a type="button" id="swal-hapus-data" class="btn btn-lg btn-danger text-white">
-                      <i class="bx bx-fw bx-trash" aria-hidden="true"></i> Hapus Pengguna
+                    <button id="swal-edit-profil-admin" class="btn btn-lg btn-primary">
+                      <i class="bx bx-fw bx-save" aria-hidden="true"></i> Simpan
+                    </button>
+                    <a href="admin-info-admin.html" class="btn btn-lg btn-danger">
+                      <i class="bx bx-fw bx-x" aria-hidden="true"></i> Batalkan
                     </a>
                   </div>
                 </div>

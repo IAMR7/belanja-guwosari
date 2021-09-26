@@ -115,7 +115,7 @@
               </a>
             </li>
             <li class="nav-item mb-3">
-              <a class="nav-link active" href="admin-data-pengguna.html">
+              <a class="nav-link" href="admin-data-pengguna.html">
                 <i class='bx bx-fw bx-group'></i>
                 Data Pengguna
               </a>
@@ -127,7 +127,7 @@
               </a>
             </li>
             <li class="nav-item mb-3">
-              <a class="nav-link" href="admin-pesanan-masuk.html">
+              <a class="nav-link active" href="admin-pesanan-masuk.html">
                 <i class='bx bx-fw bx-task'></i>
                 Pesanan Masuk
               </a>
@@ -145,146 +145,50 @@
       <main role="main" class="container page-umkm col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <section class="section mt-4">
           <div class="section-header">
-            <h3>Detail Data Pengguna</h3>
+            <h3>Pesanan Masuk</h3>
           </div>
           <div class="section-body mt-4">
-            <div class="row">
-              <div class="col-md-4 col-12">
-                <div class="card">
-                  <div class="card-body container">
-                    <img src="assets/img/avatar/foto.png" alt="" class="image" width="100%">
-                  </div>
-                </div>
+            <div class="d-flex mb-4">
+              <div class="custom-control custom-checkbox mr-4">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Validasi Semua Pembayaran</label>
               </div>
-              <div class="col-md-8 col-12">
-                <div class="card mb-4">
-                  <div class="card-body container">
-                    <div class="data-diri">
-                      <h5 class="mb-4">Informasi Data Diri</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Lengkap</p>
-                        <p>Reza Febriansyah</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Tanggal Lahir</p>
-                        <p>7 Februari 2000</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Jenis Kelamin</p>
-                        <p>Laki-laki</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Alamat Utama</p>
-                        <p>Jl Gang Migunani, Tamantirto, Kasihan, Bantul D I Yogyakarta, Indonesia<p>
-                      </div>
+              <a type="button" id="swal-teruskan-semua-pesanan" class="btn btn-lg btn-primary">Teruskan Semua Pesanan <i class="bx bx-fw bx-right-arrow-alt"></i></a>
+            </div>
+            <div class="card rounded">
+              <div class="card-body">
+                <div class="pesanan-baru mt-4">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-2 col-12">
+                      <img src="assets/img/produk/ingkung-waroeng-ndesso.png" alt="" class="rounded" width="100px" height="100px">
                     </div>
-                    <hr>
-                    <div class="info-akun">
-                      <h5 class="mb-4">Informasi Akun</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Email</p>
-                        <p>reza.febri72@gmail.com</p>
+                    <div class="col-lg-7 col-md-7 col-12">
+                      <strong>Waroeng nDesso-Nasi Tumpeng Ingkung</strong>
+                      <p>x1 <b class="text-warning">Rp.210.000</b></p>
+                      <p>Nama Pembeli : Kusnaedi</p>
+                      <p class="text-muted">Catatan Pembeli:<br> "Sesuai pesanan ya kak"</p>
+                      <img src="https://kastara.id/wp-content/uploads/2019/10/Gojek-logo.jpg" width="30%">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">Validasi Pembayaran</label>
                       </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Telepon</p>
-                        <p>08978443076</p>
-                      </div>
+                      <button class="btn btn-primary mt-5 mb-5" id="swal-teruskan-pesanan">
+                        Teruskan Kepada UMKM <i class="bx bx-fw bx-right-arrow-alt" aria-hidden="true"></i>
+                      </button>
                     </div>
-                    <hr>
-                    <div class="rekening-akun">
-                      <h5 class="mb-4">Informasi Rekening Akun</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Bank</p>
-                        <p>BRI</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Rekening</p>
-                        <p>327101041713533</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Atas Nama</p>
-                        <p>REZA FEBRIANSYAH</p>
+                    <div class="col-lg-3 col-md-3 col-12">
+                      <img src="https://kastara.id/wp-content/uploads/2019/09/BNI-logo.jpg" alt="" width="180px" height="50px">
+                      <div class="chocolat-parent mt-3">
+                        <a href="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="chocolat-image" title="Bukti Transfer">
+                          <div data-crop-image="285">
+                            <img alt="image" src="https://gotra.sgp1.cdn.digitaloceanspaces.com/web-upload/1540447745_25-10-2018_14.jpg" class="img-fluid rounded">
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body container">
-                    <div class="data-diri">
-                      <h5 class="mb-4">Informasi Utama UMKM</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Pemilik Usaha</p>
-                        <p>Yudi Susanto</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">NIK Pemilik Usaha</p>
-                        <p>3402073112810003</p>
-                      </div>
-                      <div class="d-flex text-justify mb-0">
-                        <p class="text-dark mr-4 mb-0">Nama Usaha/Toko</p>
-                        <p class="mb-0">Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></p>
-                      </div>
-                      <div class="custom-checkbox custom-control">
-                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                          id="checkbox-1">
-                        <label for="checkbox-1" class="custom-control-label">
-                          <small class="text-muted">Verifikasi UMKM ini</small>
-                        </label>
-                      </div>
-                      <div class="d-flex text-justify mt-3">
-                        <p class="text-dark mr-4">Alamat Usaha/Toko</p>
-                        <p>Karangber 001 Guwosari Pajangan Bantul DIY 55751</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Telepon Usaha/Toko</p>
-                        <p>085100452012</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Email Usaha/Toko</p>
-                        <p>ingkungjawa@gmail.com</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="info-akun">
-                      <h5 class="mb-4">Informasi Umum</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Jadwal Toko Buka</p>
-                        <p> 08.30 - 20.00 WIB (Buka Setiap Hari)</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Instagram</p>
-                        <p>@ingkungjawa</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Facebook</p>
-                        <p>ingkungjawa waroeng ndesso</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="rekening-akun">
-                      <h5 class="mb-4">Informasi Rekening Usaha</h5>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nama Bank</p>
-                        <p>BRI</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Nomor Rekening</p>
-                        <p>0236 01 051665507</p>
-                      </div>
-                      <div class="d-flex text-justify">
-                        <p class="text-dark mr-4">Atas Nama</p>
-                        <p>YUDI SUSANTO</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <a href="admin-data-pengguna.html" class="btn btn-lg btn-primary">
-                      <i class="bx bx-fw bx-left-arrow-alt" aria-hidden="true"></i> Kembali
-                    </a>
-                    <a type="button" id="swal-hapus-data" class="btn btn-lg btn-danger text-white">
-                      <i class="bx bx-fw bx-trash" aria-hidden="true"></i> Hapus Pengguna
-                    </a>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>

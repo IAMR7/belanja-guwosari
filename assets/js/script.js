@@ -51,6 +51,28 @@ $("#swal-ulasan").click(function() {
       }, 1500);
 });
 
+// SWEET ALERT TERUSKAN PESANAN
+$("#swal-teruskan-pesanan").click(function() {
+	swal('Berhasil Diteruskan', 'Pesanan telah diteruskan ke UMKM', 'success');
+});
+
+$("#swal-teruskan-semua-pesanan").click(function() {
+  swal({
+      title: 'Teruskan Semua ?',
+      text: 'Setelah menekan "OK" semua pesanan akan diteruskan kepada UMKM',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+          swal('Berhasil Diteruskan !', 'Semua pesanan telah teruskan kepada UMKM', 'success');
+      } else {
+          swal('Batal teruskan semua pesanan');
+      }
+  });
+});
+
 // SWEET ALERT LOGOUT
 $("#swal-logout").click(function() {
     swal({
@@ -70,12 +92,37 @@ $("#swal-logout").click(function() {
     });
 });
 
-// SWEET ALERT BATAL TRANSAKSI
+$("#swal-logout-admin").click(function() {
+    swal({
+        title: 'Apakah anda ingin keluar ?',
+        // text: 'Setelah menekan "OK" artikel akan diterbitkan',
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+            window.location.href = "admin-login.html";
+        }
+        else {
+            swal('batal logout');
+        }
+    });
+});
 
+// SWEET ALERT BATAL TRANSAKSI
 $("#swal-verifikasi-pembatalan").click(function() {
 	swal('Berhasil !', 'Pesanan anda berhasil dibatalkan', 'success');
     setTimeout(function(){ 
         window.location.href = "pelanggan-home.html";
+    }, 1500);
+});
+
+// SWEET ALERT UPLOAD ARTIKEL
+$("#swal-upload-artikel").click(function() {
+	swal('Berhasil !', 'Artikel berhasil dibuat', 'success');
+    setTimeout(function(){ 
+        window.location.href = "admin-artikel.html";
     }, 1500);
 });
 
@@ -100,7 +147,49 @@ $("#swal-edit-akun-profil").click(function() {
     });
 });
 
-// SWEET ALERT EDIT PROFIL UMKM
+// SWEET ALERT HAPUS DATA
+$("#swal-hapus-data").click(function() {
+    swal({
+        title: 'Hapus Data ?',
+        text: 'Setelah menekan "OK" data akan terhapus',
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+            swal('Berhasil', 'Data telah dihapus', 'success');
+            setTimeout(function(){ 
+                window.location.href = "admin-data-pengguna.html";
+            }, 1500);
+        } else {
+            swal('Batal hapus data');
+        }
+    });
+});
+
+// SWEET ALERT HAPUS ARTIKEL
+$("#swal-hapus-artikel").click(function() {
+    swal({
+        title: 'Hapus Artikel ?',
+        text: 'Setelah menekan "OK" artikel akan terhapus',
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+            swal('Berhasil', 'Artikel telah dihapus', 'success');
+            setTimeout(function(){ 
+                window.location.href = "admin-artikel.html";
+            }, 1500);
+        } else {
+            swal('Batal hapus artikel');
+        }
+    });
+});
+
+// SWEET ALERT EDIT PROFIL
 $("#swal-edit-profil-umkm").click(function() {
     swal({
         title: 'Simpan Perubahan ?',
@@ -119,6 +208,26 @@ $("#swal-edit-profil-umkm").click(function() {
             swal('Batal simpan perubahan');
         }
     });
+});
+
+$("#swal-edit-profil-admin").click(function() {
+  swal({
+      title: 'Simpan Perubahan ?',
+      text: 'Setelah menekan "OK" perubahan anda akan disimpan',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+          swal('Berhasil Edit Profil', 'Profil telah diperbaharui', 'success');
+          setTimeout(function(){ 
+              window.location.href = "admin-profil-admin.html";
+          }, 1500);
+      } else {
+          swal('Batal simpan perubahan');
+      }
+  });
 });
 
 // SWEET ALERT PROSES PEMBAYARAN
