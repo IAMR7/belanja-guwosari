@@ -34,6 +34,11 @@ $(document).ready(function() {
         
 });
 
+// SWEET ALERT CHAT ADMIN
+$("#swal-chat-admin").click(function() {
+	swal('Pesan Terkirim !', 'Pesan anda berhasil dikirim ke Admin', 'success');
+});
+
 // SWEET ALERT MASUK KERANJANG
 $("#swal-masuk-keranjang").click(function() {
 	swal('Berhasil !', 'Pesanan telah ditambahkan dalam keranjang', 'success');

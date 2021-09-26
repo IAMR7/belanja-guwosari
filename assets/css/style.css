@@ -955,6 +955,27 @@ div.konten-utama-tentang img {
   width: 100%;
 }
 
+/* PUSAT BANTUAN */
+input[type="text"].input-pusat-bantuan {
+  width: 55%;
+}
+
+img.ilus-pusat-bantuan {
+  width: 100%;
+}
+
+div.pertanyaan {
+  width: 70%;
+}
+
+div.pertanyaan a b {
+  font-size: 14px;
+}
+
+img.ilus-chat-admin {
+  width: 100%;
+}
+
 /* FOOTER */
 footer li a {
   font-size: 14px;
