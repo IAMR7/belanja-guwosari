@@ -164,10 +164,11 @@
             <div class="ml-4">
               <h5 class="text-dark">Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></h5>
               <b>1.5K Pengikut</b><br>
+              <small class="text-muted">Kategori UMKM : Warung Makan</small><br>
               <button class="btn btn-primary mt-3">
                 <i class="bx bx-fw bx-plus" aria-hidden="true"></i> Follow
               </button>
-              <a class="btn btn-outline-primary mt-3">
+              <a href="pelanggan-chat.html" class="btn btn-outline-primary mt-3">
                 <i class="bx bx-fw bx-chat" aria-hidden="true"></i> Chat
               </a>
             </div>
@@ -212,10 +213,6 @@
                   <p class="harga">Rp. 200.000</p>
                   <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
                 </div>
-                <div class="aksi-produk text-center container">
-                  <a href="javascript:vodi(0);" data-toggle="modal" data-target="#modal-quantity" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
-                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
-                </div>
               </div>
             </a>
           </div>
@@ -228,10 +225,7 @@
                   <p class="harga">Rp. 300.000</p>
                   <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
                 </div>
-                <div class="aksi-produk text-center container">
-                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
-                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
-                </div>
+                
               </div>
             </a>
           </div>
@@ -244,10 +238,7 @@
                   <p class="harga">Rp. 30.000</p>
                   <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
                 </div>
-                <div class="aksi-produk text-center container">
-                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
-                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
-                </div>
+                
               </div>
             </a>
           </div>
@@ -260,10 +251,7 @@
                   <p class="harga">Rp. 150.000</p>
                   <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
                 </div>
-                <div class="aksi-produk text-center container">
-                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
-                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
-                </div>
+                
               </div>
             </a>
           </div>
@@ -276,10 +264,7 @@
                   <p class="harga">Rp. 10.000</p>
                   <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
                 </div>
-                <div class="aksi-produk text-center container">
-                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
-                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
-                </div>
+                
               </div>
             </a>
           </div>
@@ -292,10 +277,7 @@
                   <p class="harga">Rp. 50.000</p>
                   <p class="rating-produk"><i class="bx bx-fw bxs-star text-warning"></i> 4.8 | Terjual 10</p>
                 </div>
-                <div class="aksi-produk text-center container">
-                  <a href="javascript:vodi(0);" class="btn btn-sm btn-primary btn-block">Masuk Keranjang</a>
-                  <a href="#" data-toggle="modal" data-target="#modal-checkout" class="btn btn-sm btn-outline-info mt-2 btn-block">Checkout</a>
-                </div>
+                
               </div>
             </a>
           </div>
@@ -345,72 +327,6 @@
     </div>
   </footer>
   <!-- footer -->
-
-  <!-- modal masuk keranjang -->
-  <div class="modal fade modal-login" id="modal-quantity" tabindex="-1" aria-labelledby="modal-quantityLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h6 class="modal-title" id="modal-quantityLabel">Kuantitas</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="input-group">
-            <span class="input-group-btn">
-              <button type="button" class="quantity-left-minus btn btn-light" data-type="minus" data-field="">
-                <span class="bx bx-fw bx-minus"></span>
-              </button>
-            </span>
-            <input type="text" id="quantity" name="quantity" class="text-center form-control mr-2 ml-2" value="1" min="1" max="100">
-            <span class="input-group-btn">
-              <button type="button" class="quantity-right-plus btn btn-light" data-type="plus" data-field="">
-                <span class="bx bx-fw bx-plus"></span>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <a type="button" id="swal-masuk-keranjang" class="btn btn-primary btn-lg btn-block"><i class="bx bx-fw bx-cart"></i> Masuk Keranjang</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end modal masuk keranjang -->
-
-  <!-- modal checkout -->
-  <div class="modal fade modal-login" id="modal-checkout" tabindex="-1" aria-labelledby="modal-checkoutLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h6 class="modal-title" id="modal-quantityLabel">Kuantitas</h6>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="input-group">
-            <span class="input-group-btn">
-              <button type="button" class="quantity-left-minus btn btn-light" data-type="minus" data-field="">
-                <span class="bx bx-fw bx-minus"></span>
-              </button>
-            </span>
-            <input type="text" id="quantity" name="quantity" class="text-center form-control mr-2 ml-2" value="1" min="1" max="100">
-            <span class="input-group-btn">
-              <button type="button" class="quantity-right-plus btn btn-light" data-type="plus" data-field="">
-                <span class="bx bx-fw bx-plus"></span>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <a href="pelanggan-checkout.html" class="btn btn-lg btn-info btn-block">Checkout</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end modal checkout -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -217,7 +217,10 @@
             <img class="rounded-circle" src="assets/img/warung-ndeso.png" alt="" width="50px" height="50px">
             <div class="ml-4">
               <p class="text-dark">
-                <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b>
+                <b>Waroeng nDesso <i class='bx bx-fw bxs-badge-check text-info'></i></b><br>
+                <small class="text-muted">
+                  Kategori UMKM : Warung Makan
+                </small>
               </p>
               <a href="javascript:void(0);" class="btn btn-primary"><i class="bx bx-fw bx-plus"></i> Follow</a>
               <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="bx bx-fw bx-chat"></i> Chat</a>
@@ -264,14 +267,15 @@
                 <p>Total Harga</p>
               </div>
               <div class="col-6 col-md-6 col-12">
-                <h5 class="text-warning">Rp. 320.000</h5>
+                <h5 class="text-warning">Rp. 200.000</h5>
               </div>
             </div>
 
             <a href="#" id="swal-masuk-keranjang" class="btn btn-primary mr-2">
-              <i class="fa fa-plus" aria-hidden="true"></i> Tambah Keranjang
+              <i class="fa fa-plus" aria-hidden="true"></i>Keranjang
             </a>
-            <a href="pelanggan-checkout.html" class="btn btn-outline-info">Checkout</a>
+            <a href="pelanggan-checkout.html" class="btn btn-warning text-white">Checkout</a>
+            <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn ml-2 btn-outline-info text-center">Booking</a>
 
           </div>
         </div>
@@ -335,9 +339,9 @@
         </div>
         <p>Santan nya gurih banget, enakk</p>
         <div class="balasan-penjual bg-light">
-          <img src="https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit" alt="" class="image mr-3 rounded-circle" width="30px" height="30px">
+          <img src="assets/img/warung-ndeso.png" alt="" class="image mr-3 rounded-circle" width="30px" height="30px">
           <a href="profil-toko.html" class="text-primary">
-            <b>Ingkung Kuali <i class="fa fa-check-circle text-info" aria-hidden="true"></i></b>
+            <b>Waroeng nDesso <i class="bx bx-fw bxs-badge-check text-info" aria-hidden="true"></i></b>
           </a>
           <p class="mt-2">Terimakasih atas ulasan anda yang sangat membantu kami untuk pelayanan lebih baik kedepannya</p>
         </div>
@@ -362,9 +366,9 @@
         </div>
         <p>Baru nyobain ada ayam ingkung se enak ini di Jogjaa</p>
         <div class="balasan-penjual bg-light">
-          <img src="https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_000-960x720-FIT_AND_TRIM-cc75c94b625065a494326affcd53ebc5.jpeg?tr=q-40,w-300,h-300&_src=imagekit" alt="" class="image mr-3 rounded-circle" width="30px" height="30px">
+          <img src="assets/img/warung-ndeso.png" alt="" class="image mr-3 rounded-circle" width="30px" height="30px">
           <a href="profil-toko.html" class="text-primary">
-            <b>Ingkung Kuali <i class="fa fa-check-circle text-info" aria-hidden="true"></i></b>
+            <b>Waroeng nDesso <i class="bx bx-fw bxs-badge-check text-info" aria-hidden="true"></i></b>
           </a>
           <p class="mt-2">Terimakasih atas ulasannya Kak Fiki, jangan lupa main lagi yaa</p>
         </div>
@@ -415,6 +419,164 @@
     </div>
   </footer>
   <!-- footer -->
+
+  <!-- modal booking makan ditempat -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">Tanggal dan Waktu</label>
+            <input type="datetime-local" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Jumlah Orang</label>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="quantity-left-minus btn btn-light" data-type="minus" data-field="">
+                  <span class="bx bx-fw bx-minus"></span>
+                </button>
+              </span>
+              <input type="text" id="quantity" name="quantity" class="text-center form-control mr-2 ml-2" value="1" min="1" max="100">
+              <span class="input-group-btn">
+                <button type="button" class="quantity-right-plus btn btn-light" data-type="plus" data-field="">
+                  <span class="bx bx-fw bx-plus"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <small class="text-muted">
+            Anda harus membayar lunas untuk menggunakan fitur booking ini. Lanjutkan ?
+          </small>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal"
+            href="#modal-metode-bayar">Lanjut <i class="bx bx-fw bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal booking makan ditempat -->
+
+  <!-- modal metode bayar -->
+  <div class="modal fade modal-bayar" id="modal-metode-bayar" tabindex="-1" aria-labelledby="modal-metode-bayarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-metode-bayarLabel">Pilih Metode Pembayaran</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-alfamart" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-alfamart">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/ALFAMART_LOGO_BARU.png" alt=""
+                class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">ALFAMART</h6>
+                <p class="text-muted mt-0">Bayar Melalui Alfamart Cabang Terdekat</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-indomaret" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-indomaret">
+              <img src="https://upload.wikimedia.org/wikipedia/id/0/04/Logo_Indomaret.svg" alt="" class="image mr-3"
+                width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">INDOMARET</h6>
+                <p class="text-muted mt-0">Bayar Melalui Indomaret Cabang Terdekat</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-bni" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-bni">
+              <img src="https://infobanknews.com/wp-content/uploads/2018/05/logo-BNI-46-1.png" alt="" class="image mr-3"
+                width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank BNI</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-bri" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-bri">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/BRI_2020.svg/1200px-BRI_2020.svg.png"
+                alt="" class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank BRI</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-bca" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-bca">
+              <img src="https://cdn.worldvectorlogo.com/logos/bca-bank-central-asia.svg" alt="" class="image mr-3"
+                width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank BCA</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="radio-mandiri" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label d-flex" for="radio-mandiri">
+              <img src="https://logos-download.com/wp-content/uploads/2016/06/Bank_Mandiri_logo_white_bg.png" alt=""
+                class="image mr-3" width="60px" height="30px"><br>
+              <div>
+                <h6 class="text-dark mb-0">Transfer Bank Mandiri</h6>
+                <p class="text-muted mt-0">Transfer dan Unggah Bukti Pembayaran</p>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal"
+            href="#modal-input-rekening">Lanjut</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal metode bayar -->
+
+  <!-- modal input rekening -->
+  <div class="modal fade modal-bayar" id="modal-input-rekening" tabindex="-1" aria-labelledby="modal-metode-bayarLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+
+        <div class="modal-body p-4">
+          <div class="form-group">
+            <label for="">Masukkan Nomor Rekening</label>
+            <input type="number" class="form-control" name="" id="" aria-describedby="helpId">
+            <small id="helpId" class="form-text text-muted">Jika anda membayar melalui teller bank, isikan dengan
+              "0000"</small>
+          </div>
+          <div class="form-group">
+            <label for="">Atas Nama</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" type="button" id="swal-proses-pembayaran">Proses Pembayaran <i class="bx bx-fw bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal input rekening -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
