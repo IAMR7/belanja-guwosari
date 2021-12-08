@@ -540,7 +540,7 @@ section.section-chat .file-group input[type="file"] {
   position: absolute;
   opacity: 0;
   z-index: -1;
-  width: 20px
+  width: 20px;
 }
 
 /* CARD PRODUK */
